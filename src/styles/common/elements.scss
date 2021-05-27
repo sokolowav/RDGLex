@@ -1,0 +1,332 @@
+body {
+  color: $white-text;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  background: $background-blue-deep;
+  width: 100%;
+  min-height: 100vh;
+  transition: .3s;
+}
+
+h1 {
+  margin: 0;
+  font-size: 70px;
+  font-weight: 600;
+
+  @include w1440 {
+    font-size: 50px;
+  }
+
+  @include w1024 {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  @include w1440 {
+    font-size: 40px;
+  }
+
+  @include w1024 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 500;
+
+  @include w1440 {
+    font-size: 30px;
+  }
+
+  @include w1024 {
+    font-size: 20px;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.p-l {
+  padding-left: 90px;
+}
+
+.sub-h {
+  font-size: 30px;
+  font-weight: 300;
+
+  @include w1024 {
+    font-size: 17px;
+  }
+
+  @include w480 {
+    margin-bottom: 10px;
+  }
+}
+
+.section {
+  position: relative;
+}
+
+.col {
+  flex: 1 50%;
+  width: 50%;
+  
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding-left: $nav-width;
+
+  @include w1024 {
+    padding-left: 0;
+  }
+}
+
+.line-center {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 0.5px;
+    background: $white-low;
+  }
+}
+
+.text-gold {
+  color: $gold;
+}
+
+.text-sub {
+  color: $white-subtext;
+}
+
+.text-number {
+  font-size: 70px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+
+  @include w1440 {
+    font-size: 50px;
+  }
+
+  @include w1024 {
+    font-size: 40px;
+  }
+}
+
+.phone {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.text-pinyon {
+  font-family: 'PinyonScript', sans-serif;
+  font-size: 36px;
+
+  @include w1024 {
+    font-size: 17px;
+  }
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border: 1px solid $white-low;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--big {
+    height: 84px;
+    width: 84px;
+
+    img {
+      max-width: 70%;
+    }
+
+    @include w1440 {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+.btn {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 20px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+
+  @include w1024 {
+    font-size: 17px;
+    padding: 15px 25px;
+    height: 48px;
+  }
+
+  &-gold {
+    background-color: $gold;
+  }
+
+  &-regular {
+    background-color: transparent;
+    border: 1px solid $white-low;
+    border-top: 1px solid $gold;
+    color: $white-text;
+    white-space: nowrap;
+    
+    &:hover {
+      background-color: $gold;
+      color: $black-text
+    }
+  }
+
+  &.sending {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: $btn-sending-background;
+    color: $btn-sending-color;
+  }
+}
+
+.btn-wrapper--mobile {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  @include w480 {
+    display: block;
+  }
+}
+
+.question {
+  background: $background-blue-3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.swipers-arrows {
+  display: flex;
+  align-items: center;
+
+  @include w1024 {
+    display: none;
+  }
+  
+  &__item {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__left {
+    transform: rotate(90deg)
+  }
+
+  &__right {
+    transform: rotate(-90deg)
+  }
+}
+
+.tag {
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: $gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white-low;
+  font-size: 14px;
+  font-weight: 400;
+
+  @include w1440 {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
+}
+
+.swiper {
+  &-pagination {
+    position: static;
+
+    &-bullet {
+      width: 40px;
+      height: 2px;
+      margin-right: 10px;
+      background: $white-low;
+      border-radius: 1px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      &-active {
+        background: $gold;
+      }
+    }
+  }
+}
+
+.mob-none {
+  @include w480 {
+    display: none;
+  }
+}
