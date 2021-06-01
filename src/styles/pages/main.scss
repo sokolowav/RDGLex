@@ -24,9 +24,12 @@
     }
     &-controls {
       position: absolute;
-      top: 640px;
+      width: 100%;
+      bottom: 40px;
       height: 48px;
-      //z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }
