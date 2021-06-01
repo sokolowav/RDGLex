@@ -14,8 +14,8 @@
     position: absolute;
     background: url('../images/HomePageSlider.jpg') no-repeat center center;
     background-size: cover;
-  }    
-  /*&-content {
+  }     
+  &-content {
     position: relative;
     &-info{
       position: absolute;
@@ -26,8 +26,8 @@
       position: absolute;
       top: 640px;
       height: 48px;
-      z-index: 1;
+      //z-index: 1;
     }
-  }*/
+  }
 }
 
