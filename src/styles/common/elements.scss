@@ -29,31 +29,46 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: 60px;
   font-weight: 600;
-  letter-spacing: 3px;
-
-  @include w1440 {
-    font-size: 40px;
-  }
-
-  @include w1024 {
-    font-size: 24px;
-  }
-}
-
-h3 {
-  margin: 0;
   font-size: 40px;
-  font-weight: 500;
+  line-height: 49px;
 
   @include w1440 {
     font-size: 30px;
   }
 
   @include w1024 {
-    font-size: 20px;
+    font-size: 18px;
   }
+}
+
+h3 {
+  margin: 0;
+  font-size: 22px;
+line-height: 27px;
+  font-weight: 600;
+
+  @include w1440 {
+    font-size: 22px;
+  }
+
+  @include w1024 {
+    font-size: 18px;
+  }
+}
+
+p {
+  color: $white-subtext;
+}
+
+article {
+  padding-left: 39px;
+  padding-top: 72px;
+}
+
+time {
+  font-style: italic;
+  font-size: 15px;
 }
 
 .d-flex {
@@ -315,25 +330,6 @@ h3 {
   }
 }
 
-.swiper {
-  &-pagination {
-    //position: absolute;
-    &-bullet {
-      width: 40px;
-      height: 2px;
-      margin-right: 10px;
-      background: $white-low;
-      border-radius: 1px;
-      &:last-child {
-        margin-right: 0px;
-      }
-      &-active {
-        background: $gold;
-      }
-    }
-  }
-}
-
 .bullets {
   height: 2px;
   width: 140px;
@@ -360,3 +356,4 @@ h3 {
     display: none;
   }
 }
+
