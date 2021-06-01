@@ -344,6 +344,7 @@ template {
 	outline: none;
 }
 *{
+
 	box-sizing: border-box;
 }
 a{

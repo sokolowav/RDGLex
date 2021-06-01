@@ -1,89 +1,33 @@
-.screen-main {
-  height: 100vh;
-  text-align: center;
-
-  &--background {
+.slider {
+  content: '';
+  display: block;
+  height: 672px;
+  width: 100%;
+  background: rgba(14, 25, 41, 0.8);
+  z-index: 0;
+  &-background {
+    z-index: -1;
+    top: 132px;
+    right: 0px;
+    width: 100%;
+    height: 672px;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background: url('../images/background-lex-main-2.png') no-repeat center center;
+    background: url('../images/HomePageSlider.jpg') no-repeat center center;
     background-size: cover;
-
-    &::after {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: rgba(14, 25, 41, 0.8);
-    }
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-top: 60px;
-    padding-bottom: 80px;
+  }    
+  /*&-content {
     position: relative;
-  }
-
-  &__top {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    white-space: nowrap;
-    padding-right: 60px;
-
-    @include w1024 {
-      display: none;
+    &-info{
+      position: absolute;
+      top: 47%;
+      transform: translateY(-50%);
     }
-
-    &--city {
-      font-size: 13px;
-      margin-right: 32px;
+    &-controls {
+      position: absolute;
+      top: 640px;
+      height: 48px;
+      z-index: 1;
     }
-
-    &--phone {
-      font-size: 19px;
-    }
-  }
-
-  &__main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 15vh;
-    flex: 1;
-
-    .text-pinyon {
-      margin-bottom: 40px;
-
-      @include w1440 {
-        margin-bottom: 20px;
-      }
-
-      @include w1024 {
-        margin-bottom: 5px;
-      }
-    }
-
-    h1 {
-      margin-bottom: 60px;
-
-      @include w1440 {
-        margin-bottom: 30px;
-      }
-    }
-  }
-
-  .btn-down {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(calc(-50% + 0.5px), -50%);
-  }
+  }*/
 }
+

@@ -2,10 +2,11 @@ body {
   color: $white-text;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 .wrapper {
-  background: $background-blue-deep;
   width: 100%;
   min-height: 100vh;
   transition: .3s;
@@ -13,7 +14,8 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 70px;
+  font-size: 60px;
+  line-height: 73px;
   font-weight: 600;
 
   @include w1440 {
@@ -102,14 +104,12 @@ h3 {
 }
 
 .container {
-  position: relative;
-  z-index: 2;
+  max-width: 1460px;
+  padding: 0px 16px;
+  margin: 0 auto;
+  width: 85%;
+  min-width: 320px;
   height: 100%;
-  padding-left: $nav-width;
-
-  @include w1024 {
-    padding-left: 0;
-  }
 }
 
 .line-center {
@@ -129,6 +129,10 @@ h3 {
 
 .text-gold {
   color: $gold;
+}
+
+.text-thin {
+  font-weight: 200;
 }
 
 .text-sub {
@@ -157,7 +161,10 @@ h3 {
   }
 
   &__icon {
-    margin-right: 10px;
+    margin-right: 23px;
+  }
+  &__info {
+    line-height: 14px;
   }
 }
 
@@ -196,17 +203,20 @@ h3 {
 }
 
 .btn {
-  height: 60px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
-  padding: 20px 40px;
+  padding: 12px 29px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   cursor: pointer;
   transition: .3s;
+  &__wrapper{
+    margin-top: 50px;
+  }
 
   @include w1024 {
     font-size: 17px;
@@ -307,8 +317,7 @@ h3 {
 
 .swiper {
   &-pagination {
-    position: static;
-
+    position: absolute;
     &-bullet {
       width: 40px;
       height: 2px;
