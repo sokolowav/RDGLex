@@ -45,7 +45,7 @@ h2 {
 h3 {
   margin: 0;
   font-size: 22px;
-line-height: 27px;
+  line-height: 27px;
   font-weight: 600;
 
   @include w1440 {
@@ -357,3 +357,9 @@ time {
   }
 }
 
+.grey-line-horizontal {
+  content: "";
+  background: $white-low;
+  height: 1px;
+  width: 100%;
+}

@@ -45,6 +45,11 @@
         p {
           padding-top: 18px;
         }
+        &:hover {
+          transition: .5s;
+          background: url('../images/newsbg.png') no-repeat center center;
+          background-size: cover;
+        }
       }
     }
   }

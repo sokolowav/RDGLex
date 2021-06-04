@@ -44,5 +44,10 @@
 
 .phone {
   margin-right: 59px;
+  &__icon {
+    &:hover {
+      border-color: $gold;
+    }
+  }
 }
 
