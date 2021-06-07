@@ -41,10 +41,10 @@
     }
   }
   &-list {
-    display: flex;
-    flex-flow: column wrap;
-    &-item {
-      width: 48.4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+      &-item {
       background-color: $background-blue-4;
       margin-bottom: 30px;
       &:last-child {
