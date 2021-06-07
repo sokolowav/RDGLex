@@ -215,6 +215,9 @@ time {
       width: 50px;
     }
   }
+  &:hover {
+    border-color: $gold;
+  }
 }
 
 .btn {
