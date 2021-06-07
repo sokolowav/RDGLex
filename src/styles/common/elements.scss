@@ -44,16 +44,16 @@ h2 {
 
 h3 {
   margin: 0;
+  font-weight: 600;
   font-size: 22px;
   line-height: 27px;
-  font-weight: 600;
 
   @include w1440 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   @include w1024 {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
@@ -232,8 +232,15 @@ time {
   text-align: center;
   cursor: pointer;
   transition: .3s;
+  &__stretched {
+    height: 60px;
+    width: 100%;
+  }
   &__wrapper{
     margin-top: 50px;
+    &__stretched {
+      width: 100%;
+    }
   }
 
   @include w1024 {
