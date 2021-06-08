@@ -1,15 +1,15 @@
 .news {
-  height: 651px;
   background: $background-blue-3;
   &-content {
     &-head {
       position: relative;
-      height: 189px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 70px 0;
       div {
         line-height: 11px;
+        padding-top: 7px;
       }
       &::before, &::after {
         content: "";
@@ -35,9 +35,13 @@
         &:last-child {
           border-right: 1px solid $white-low;
         }
+        article {
+          padding: 72px 46px 0 39px;
+        }
         .btn__wrapper {
-          margin-top: 30px;
-          margin-bottom: 72px;
+          padding-top: 32px;
+          padding-bottom: 70px;
+          margin-top: 0px;
         }
         h3 {
           padding-top: 8px;

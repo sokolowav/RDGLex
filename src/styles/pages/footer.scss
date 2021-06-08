@@ -1,38 +1,27 @@
 .footer {
   background-color: $background-blue-1;
-  &-content {
-    min-height: 484px;
-  }
   &-top {
-    padding-top: 10px;
-    padding-right: 20px;
-    min-height: 260px;
+    padding: 110px 0 98px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     &-text {
-      padding-left: 40px;
-      padding-right: 62px;
+      padding: 0 40px;
       font-size: 11px;
       line-height: 17px;
     }
-    .logo {
-      padding-left: 10px;
-    }
   }
   &-down {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
-    //min-height: 110px;
     &-item {
-      padding-top: 5.5%;
+      padding: 66px 0 117px 40px;
       font-size: 16px;
       line-height: 40px;
       color: $white-subtext;
-      flex-wrap: nowrap;
-      &:last-child {
-        padding-right: 170px;
+      &:first-child {
+        padding-left: 0px;
       }
     }
     
@@ -40,7 +29,6 @@
   
   .col {
     flex: 0 1 33.3%;
-    //padding: 115px 70px;
 
     @include w1440 {
       padding: 30px 60px;

@@ -7,9 +7,10 @@ body {
 }
 
 .wrapper {
-  width: 100%;
+  //width: 100vw;
   min-height: 100vh;
   transition: .3s;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -59,11 +60,6 @@ h3 {
 
 p {
   color: $white-subtext;
-}
-
-article {
-  padding-left: 39px;
-  padding-top: 72px;
 }
 
 time {
@@ -119,7 +115,7 @@ time {
 }
 
 .container {
-  max-width: 1460px;
+  max-width: 1472px;
   padding: 0px 16px;
   margin: 0 auto;
   width: 85%;

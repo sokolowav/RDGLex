@@ -23,7 +23,7 @@
   &-nav {
     display: grid;
     grid-template-columns: 75.5% 1px auto;
-    height: 31px;
+    align-items: center;
     &-natural {
       justify-content: space-around;
       flex-wrap: nowrap;
