@@ -146,6 +146,11 @@ time {
   font-weight: 200;
 }
 
+.text__italic__white {
+  font-style: italic;
+  color: $white-text;
+}
+
 .text-sub {
   color: $white-subtext;
 }
@@ -368,4 +373,16 @@ time {
   background: $white-low;
   height: 1px;
   width: 100%;
+}
+
+.highlight-box {
+  width: 100%;
+  border: 1px solid $white-low;
+  border-left: 6px solid $gold;
+  p {
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    padding: 50px 36px 50px 55px;
+  }
 }

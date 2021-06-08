@@ -1,0 +1,35 @@
+.service-info {
+  background-color: $background-blue-3;
+  &-container {
+    display: grid;
+    grid-template-columns: 20.69% auto;
+    column-gap: 4.86%;
+    padding: 72px 0 104px;
+  }
+  &-left {
+    padding-top: 7px;
+  }
+  &-price-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 45px 40px;
+    background-color: $background-blue-4;
+  }
+  .highlight-box {
+    margin: 53px 0;
+  }
+}
+
+.price {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 600;
+  padding: 4px 0 30px;
+  &__italic {
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    padding-top: 4px;
+    font-style: italic;
+  }
+}
