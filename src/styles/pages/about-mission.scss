@@ -1,12 +1,61 @@
 .about-mission {
-  background-color: $background-blue-3;
+  &__light {
+    background-color: $background-blue-3;
+  }
+  &__dark {
+    background-color: $background-blue-4;
+  }
   &-container {
     display: grid;
     grid-template-columns: 20.69% auto;
     column-gap: 4.86%;
-    padding: 72px 0 104px;
+    padding: 72px 0 80px;
   }
   &-left {
-    padding-top: 7px;
+    p {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 39px;
+      color: white;
+    }
+    span {
+      color: $gold;
+    }
+  }
+  .grey-line-horizontal {
+    margin: 80px 0;
+  }
+}
+
+.advantages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0px 30px;
+  margin-bottom: 100px;
+  &-item {
+    &__icon {
+      margin-bottom: 40px;
+      @include w1440 {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__text {
+      font-size: 24px;
+      margin-bottom: 15px;
+      @include w1440 {
+        font-size: 16px;
+      }
+    }
+
+    &__subtext {
+      font-size: 17px;
+      line-height: 28px;
+      @include w1440 {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
   }
 }
