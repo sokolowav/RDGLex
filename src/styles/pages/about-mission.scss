@@ -1,0 +1,12 @@
+.about-mission {
+  background-color: $background-blue-3;
+  &-container {
+    display: grid;
+    grid-template-columns: 20.69% auto;
+    column-gap: 4.86%;
+    padding: 72px 0 104px;
+  }
+  &-left {
+    padding-top: 7px;
+  }
+}
