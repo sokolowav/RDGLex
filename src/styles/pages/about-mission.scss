@@ -31,31 +31,69 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 0px 30px;
-  margin-bottom: 100px;
+  grid-gap: 25px;
+  margin-bottom: 23px;
   &-item {
     &__icon {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       @include w1440 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
 
     &__text {
       font-size: 24px;
+      line-height: 29px;
       margin-bottom: 15px;
+      padding-right: 34px;
       @include w1440 {
         font-size: 16px;
+        line-height: 20px;
       }
     }
 
     &__subtext {
       font-size: 17px;
       line-height: 28px;
+      padding-right: 34px;
       @include w1440 {
         font-size: 13px;
         line-height: 20px;
       }
+    }
+  }
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 56px;
+  padding: 10px 0 32px;
+  &-item {
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 31px;
+    }
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 15px;
+    padding-right: 34px;
+    @include w1440 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+   &__subtext {
+    font-size: 17px;
+    line-height: 28px;
+    padding-right: 34px;
+    @include w1440 {
+      font-size: 13px;
+      line-height: 20px;
     }
   }
 }
