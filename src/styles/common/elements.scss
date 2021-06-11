@@ -48,6 +48,7 @@ h3 {
   font-weight: 600;
   font-size: 22px;
   line-height: 27px;
+  letter-spacing: 1px;
 
   @include w1440 {
     font-size: 18px;
@@ -374,6 +375,10 @@ time {
   background: $white-low;
   height: 1px;
   width: 100%;
+  &__short {
+    width: 33px;
+    background: $white-low-20;
+  }
 }
 
 .highlight-box {
@@ -398,4 +403,14 @@ time {
       top: -1px;
     }
   }
+}
+.gradient {
+  background: linear-gradient($white-subtext, rgba(255,255,255,0));
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.active-gold {
+  color: $gold;
 }
