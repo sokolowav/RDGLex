@@ -1,0 +1,54 @@
+.about-career {
+  background-color: $background-blue-4;
+  &-content {
+    padding: 72px 0 80px;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: 20.69% auto;
+    column-gap: 4.86%;
+  }
+  &-left {
+    p {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 39px;
+      color: white;
+    }
+    span {
+      color: $gold;
+    }
+  }
+
+  .highlight-box {
+    margin: 75px 0 70px;
+  }
+  .btn__wrapper {
+    display: flex;
+    margin-top: 80px;
+  }
+  .btn-regular {
+    margin-right: 25px;
+  }
+}
+
+.benefits, .requirements {
+  &-item {
+    display: flex;
+    padding-bottom: 28px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &-text {
+      color: white;
+    }
+  }
+}
+.benefits-item-marker {
+  padding-top: 5px;
+  padding-right: 34px;
+}
+.requirements-item-marker {
+  padding-top: 11px;
+  padding-right: 28px;
+}

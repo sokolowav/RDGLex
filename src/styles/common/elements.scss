@@ -265,8 +265,12 @@ time {
     
     &:hover {
       background-color: $gold;
-      color: $black-text
+      color: $black-text;
     }
+    &:hover span {
+      color: $black-text;
+    }
+
   }
 
   &.sending {
@@ -381,13 +385,20 @@ time {
   }
 }
 
+.horizontal-borders {
+  border-top: 1px solid $white-low;
+  border-bottom: 1px solid $white-low;
+  margin: 53px 0;
+  padding: 53px 0;
+}
+
 .highlight-box {
   width: 100%;
   p {
     font-size: 24px;
     line-height: 36px;
     color: white;
-    padding: 50px 36px 50px 55px;
+    padding: 50px 61px 50px 55px;
   }
   &-content {
     height: 100%;
@@ -413,4 +424,8 @@ time {
 
 .active-gold {
   color: $gold;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
 }
