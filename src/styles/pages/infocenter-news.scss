@@ -1,0 +1,12 @@
+.infocenter-news {
+  &-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0 75px;
+    span {
+      padding-top: 18px;
+    }
+  }  
+}

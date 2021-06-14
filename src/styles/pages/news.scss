@@ -35,6 +35,14 @@
         &:last-child {
           border-right: 1px solid $white-low;
         }
+      }
+      &-item__infocenter {
+        border-bottom: 1px solid $white-low;
+        border-left: 1px solid $white-low;
+        border-right: 1px solid $white-low;
+        min-height: 461px;
+      }
+      &-item, &-item__infocenter {
         article {
           padding: 72px 46px 0 39px;
         }
@@ -53,6 +61,15 @@
           transition: .5s;
           background: url('../images/newsbg.png') no-repeat center center;
           background-size: cover;
+          time {
+            color: $white-subtext;
+          }
+          h3 {
+            color: $gold;
+          }
+          p {
+            color: white;
+          }
         }
       }
     }
