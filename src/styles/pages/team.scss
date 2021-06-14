@@ -1,0 +1,77 @@
+.team {
+  background-color: $background-blue-3;
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 60px;
+    padding: 50px 0 89px;
+  }
+  &-item {
+    display: grid;
+    grid-template-columns: 34.75% auto;
+    border-bottom: 1px solid $white-low;
+    &-photo {
+      align-self: flex-end;
+      max-width: 240px;
+      //img {
+        //width: 100%;
+      //}
+    }
+    &-info {
+      padding: 25px 0 35px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        font-size: 15px;
+        font-style: italic;
+        color: $white-subtext;
+        padding-top: 8px;
+      }
+    }
+    &-skills {
+      padding-right: 37px;
+      padding-bottom: 40px;
+    }
+    &-skill {
+      border: 1px solid $white-low;
+      border-radius: 30px;
+      padding: 0 15px;
+      margin-top: 8px;
+      margin-right: 3px;
+      display: inline-block;
+      a {
+        font-size: 14px;
+        line-height: 36px;
+      }
+      &:hover {
+        border-color: $gold;
+        a {
+          color: $gold;
+        }
+      }
+    }
+    &-contacts {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-phone {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1.1px;
+    }
+    &-messender {
+      display: flex;
+      font-size: 15px;
+      line-height: 28px;
+      a {
+        padding-right: 17px;
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
