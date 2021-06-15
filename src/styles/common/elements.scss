@@ -143,6 +143,10 @@ time {
   color: $gold;
 }
 
+.text-white {
+  color: white;
+}
+
 .text-thin {
   font-weight: 200;
 }
@@ -204,6 +208,11 @@ time {
   border: 1px solid $white-low;
   border-radius: 50%;
   cursor: pointer;
+
+  &--small {
+    height: 40px;
+    width: 40px;
+  }
 
   &--big {
     height: 84px;
@@ -398,7 +407,7 @@ time {
     font-size: 24px;
     line-height: 36px;
     color: white;
-    padding: 50px 61px 50px 55px;
+    padding: 50px 60px;
   }
   &-content {
     height: 100%;
@@ -413,6 +422,30 @@ time {
       position: absolute;
       top: -1px;
     }
+  }
+
+  &__list {
+    padding: 33px 0;
+    h3 {
+      padding-bottom: 15px;
+    }
+    &-item {
+      display: flex;
+      padding-top: 15px;
+    }
+    &-marker {
+      font-size: 15px;
+    }
+    &-text {
+      padding: 6px 0 0 16px;
+    }
+  }
+  &__dark {
+    font-size: 24px;
+    line-height: 36px;
+    background-color: $background-blue-4;
+    padding: 52px 61px;
+    margin-top: 57px;
   }
 }
 .gradient {
