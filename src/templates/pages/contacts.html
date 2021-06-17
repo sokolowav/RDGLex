@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-office</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="styles/app.min.css" />
 </head>
 <body>
@@ -13,6 +13,7 @@
 <!--ЧЕРДАК-->
 
         <header class="header">
+        
             <div class="header-content header-container">
                 <a href="index.html" class="header-logo">
                     <img src="./images/logo.svg" alt="logo">
@@ -51,36 +52,74 @@
                     </a>
                 </div>
             </div>
+        
         </header>
 
-<!--СТРАНИЦА О КОМПАНИИ - ОФИС КОНТЕНТ-->
+<!--СТРАНИЦА КОНТАКТЫ КОНТЕНТ-->
 
-<!--СТРАНИЦА О КОМПАНИИ - ОФИС КОНТЕНТ ВЕРХНИЙ БЛОК-->
+<!--СТРАНИЦА КОНТАКТЫ КОНТЕНТ ВЕРХНИЙ БЛОК-->
         
-        <section class="topping-with-navbar">
-            <div class="topping-with-navbar-background topping-with-navbar-background__about-office"></div>
-            <div class="topping-with-navbar-content container">
-                <div class="topping-with-navbar-content-info">
-                    <a href="index.html" class="d-flex">
-                        <div class="icon-wrapper">
-                            <img src="./images/icons/arrowShort.svg" alt="arrow">
-                        </div>
-                        <span class="text-gold">Вернуться назад</span> 
-                    </a>
-                    <h1>О компании</h1>
+<section class="topping-with-navbar">
+    <div class="topping-with-navbar-background topping-with-navbar-background__infocenter-contacts"></div>
+    <div class="topping-with-navbar-content container">
+        <div class="topping-with-navbar-content-info">
+            <a href="index.html" class="d-flex">
+                <div class="icon-wrapper">
+                    <img src="./images/icons/arrowShort.svg" alt="arrow">
                 </div>
-                <div class="topping-navbar">
-                    <div class="topping-navbar-element "><a href="about-mission.html" class="topping-navbar-link">Миссия</a></div>
-                    <div class="topping-navbar-element"><a href="about-reputation.html" class="topping-navbar-link">Репутация</a></div>
-                    <div class="topping-navbar-element "><a href="about-career.html" class="topping-navbar-link">Карьера</a></div>
-                    <div class="topping-navbar-element active"><a href="about-office.html" class="topping-navbar-link">Офис</a></div>
-                </div>
+                <span class="text-gold">Вернуться назад</span> 
+            </a>
+            <h1>Инфоцентр</h1>
+        </div>
+        <div class="topping-navbar">
+            <div class="topping-navbar-element"><a href="infocenter-news.html" class="topping-navbar-link">Новости компании</a></div>
+            <div class="topping-navbar-element active"><a href="infocenter-contacts.html" class="topping-navbar-link">Контакты пресс-службы</a></div>
+        </div>
 
+    </div>
+</section>
+
+<!--СТРАНИЦА КОНТАКТЫ КОНТЕНТ НИЖНИЙ БЛОК-->
+
+        <section class="contacts">
+            <div class="contacts-content container">
+                <div class="contacts-container">
+                    <div class="contacts-left">
+                        <h3>Звоните или пишите нам, а лучше приезжайте в наш офис</h3>
+                        <div class="contacts-adress">
+                            <div class="contacts-icon">
+                                <img src="./images/icons/marker-geo.svg" alt="contacts-marker">
+                            </div>
+                            <div class="contacts-text">
+                                <span class="text-gold"><b>Санкт-Петербург,</b></span><span> 1-я Советская ул., 6/1, офис 217, БЦ «Искра»</span>
+                            </div>
+                        </div>
+                        <p>
+                            Мы представляем интересы клиентов в международных арбитражных и судебных процессах в России и за 
+                            рубежом, оказываем юридическое сопровождение международных коммерческих и инвестиционных проектов, 
+                            сложных M&A сделок, консультируем по вопросам корпоративного и антимонопольного права, интеллектуальной 
+                            собственности, информационных технологий, банковского и финансового права, налогообложения, 
+                            недвижимости и строительства, трудового, транспортного и морского права. Наши юристы также участвуют 
+                            в целом ряде крупнейших инфраструктурных и ГЧП проектов, реализуемых в регионе.
+                        </p>
+                        
+                    </div>
+                    <div class="contacts-right">
+                        <a href="tel:8 (909) 593 10 90"><b>8 (909) 593 10 90</b></a>
+                        <p>Пн-Пт 9:00–21:00</p>
+                        <div class="btn__wrapper">
+                            <button class="btn btn-regular" type="button" data-service>Заказать обратный звонок</button>
+                        </div>
+                        <a href="tel:8 (909) 593 10 90"><b>8 (909) 593 10 90</b></a>
+                        <p>Пресс-служба</p>
+                        <a href="mailto: inform@rdglex.ru" target="_blank" class="text-gold contacts-sub-text contacts-mail">inform@rdglex.ru</a>
+                        <div class="btn__wrapper">
+                            <button class="btn btn-regular" type="button" data-service>Получить консультацию</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
-<!--СТРАНИЦА О КОМПАНИИ - ОФИС КОНТЕНТ НИЖНИЙ БЛОК-->
-
         <section class="about-office">
             <div id="map"></div>
         </section>
