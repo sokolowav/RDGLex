@@ -87,12 +87,10 @@
     &:hover {
       color: $gold;
     }
-    //&:active {
-    //  border-bottom: 3px solid $gold;
-    //}
+  }
+  .active {
+    border-bottom: 3px solid $gold;
   }
 }
 
-.active {
-  border-bottom: 3px solid $gold;
-}
+

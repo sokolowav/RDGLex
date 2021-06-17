@@ -448,6 +448,52 @@ time {
     margin-top: 57px;
   }
 }
+
+.business-card {
+  background-color: $background-blue-4;
+  position: relative;
+  padding: 60px 0 65px 60px;
+  margin-top: 63px;
+  
+  &-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50.57%;
+  }
+  &-photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    width: 48.29%;
+  }
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+  &-name {
+    padding: 0 0 20px 0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 39px;
+    color: white;
+  }
+  &-post {
+    font-size: 15px;
+    color: $white-subtext;
+    font-style: italic;
+  }
+  &-phone {
+    padding-top:  58px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
 .gradient {
   background: linear-gradient($white-subtext, rgba(255,255,255,0));
   -webkit-background-clip: text; 
