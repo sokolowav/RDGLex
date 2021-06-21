@@ -18,7 +18,21 @@
           <a href="index.html" class="header-logo">
             <img src="./images/logo.svg" alt="logo">
           </a>
-          <div class="header-nav">
+          
+          <nav class="header-nav__mobile">
+            <ul class="header-nav__mobile-list">
+              <li class="header-nav__mobile-list-item"><a href="about-mission.html">О компании</a></li>
+              <li class="header-nav__mobile-list-item"><a href="service.html">Услуги</a></li>
+              <li class="header-nav__mobile-list-item"><a href="team.html">Команда</a></li>
+              <li class="header-nav__mobile-list-item"><a href="infocenter-news.html">Инфоцентр</a></li>
+              <li class="header-nav__mobile-list-item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header-nav__burger">
+              <span></span>
+            </div>
+          </nav>
+          
+          <nav class="header-nav">
             <div class="header-nav-natural d-flex">
               <div class="header-nav-natural-about"><a href="about-mission.html">О компании</a></div>
               <div class="header-nav-natural-service"><a href="service.html">Услуги</a></div>
@@ -38,7 +52,7 @@
                 </svg>
                 <span class="text-gold">Для бизнеса</span></a>
             </div>  
-          </div>
+          </nav>
           <div class="phone">
             <a href="tel:8 (909) 593 10 90" class="justify-end phone__wrapper">
               <div class="icon-wrapper phone__icon">
@@ -186,6 +200,7 @@
       </div>
     </footer>
   </div>  
-  <script src="scripts/main.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="scripts/menu.js" type="module"></script>
 </body>
 </html>

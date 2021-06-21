@@ -1,9 +1,7 @@
 .slider {
-  content: '';
-  display: block;
   position: relative;
   max-height: 672px;
-  height: 35vw;;
+  height: 35vw;
   &-background {
     position: absolute;
     top: 0;
@@ -34,7 +32,7 @@
     &-controls {
       position: absolute;
       width: 100%;
-      bottom: 40px;
+      bottom: 2.08vw;
       height: 48px;
       display: flex;
       align-items: center;

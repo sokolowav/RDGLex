@@ -178,14 +178,26 @@ time {
 }
 
 .phone {
+  margin-right: 59px;
+  @include w1440 {
+    margin-right: 20px;
+  }
+  @include w1024 {
+    display: none;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
   }
-
   &__icon {
     margin-right: 23px;
+    &:hover {
+      border-color: $gold;
+    }
+    @include w1440 {
+      margin-right: 10px;
+    }
   }
   &__info {
     line-height: 14px;
