@@ -1,6 +1,7 @@
 .slider {
   position: relative;
   max-height: 672px;
+  min-height: 200px;
   height: 35vw;
   &-background {
     position: absolute;
@@ -9,10 +10,9 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    height: 35vw;
+    height: 100%;
     max-height: 672px;
-    position: absolute;
-    background: url('../images/HomePageSlider.jpg') no-repeat center center;
+    background: url('../images/homepage.png') no-repeat center center;
     background-size: cover;
     &::after {
       content: '';
@@ -28,6 +28,9 @@
       position: absolute;
       top: 47%;
       transform: translateY(-50%);
+      @include w768 {
+        top: 45%;
+      }
     }
     &-controls {
       position: absolute;
@@ -37,7 +40,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-right: 32px; 
+      padding-right: 32px;
+      @include w768 {
+        justify-content: center;
+        padding-right: 0;
+        height: 16px;
+      } 
     }
   }
 }

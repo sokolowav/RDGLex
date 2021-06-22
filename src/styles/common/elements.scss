@@ -4,10 +4,18 @@ body {
   scroll-behavior: smooth;
   font-size: 17px;
   line-height: 28px;
+  @include w768 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  @include w480 {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .wrapper {
-  //width: 100vw;
+  width: 100%;
   min-height: 100vh;
   transition: .3s;
   overflow-x: hidden;
@@ -21,10 +29,20 @@ h1 {
 
   @include w1440 {
     font-size: 50px;
+    line-height: 60px;
   }
 
   @include w1024 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+  @include w768 {
     font-size: 32px;
+    line-height: 39px;
+  }
+  @include w480 {
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 
@@ -258,21 +276,39 @@ time {
   text-align: center;
   cursor: pointer;
   transition: .3s;
+  @include w768 {
+    height: 32px;
+  }
   &__stretched {
     height: 60px;
     width: 100%;
   }
   &__wrapper{
     margin-top: 50px;
+    @include w768 {
+      margin-top: 30px;
+    }
     &__stretched {
       width: 100%;
     }
   }
 
+  
   @include w1024 {
     font-size: 17px;
     padding: 15px 25px;
     height: 48px;
+  }
+  @include w768 {
+    height: 32px;
+    padding: 9px 15px;
+    font-size: 15px;
+  }
+
+  @include w480 {
+    font-size: 12px;
+    padding: 9px 15px;
+    height: 32px;
   }
 
   &-gold {
@@ -304,14 +340,14 @@ time {
   }
 }
 
-.btn-wrapper--mobile {
+.btn-wrapper__mobile {
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   display: none;
 
-  @include w480 {
+  @include w768 {
     display: block;
   }
 }
@@ -333,7 +369,7 @@ time {
   display: flex;
   align-items: center;
 
-  @include w1024 {
+  @include w768 {
     display: none;
   }
   
@@ -374,14 +410,19 @@ time {
   height: 2px;
   width: 140px;
   display: flex;
-  
-  &-item
-  {
+  @include w768 {
+    justify-content: center;
+  }
+  &-item {
     width: 40px;
     height: 2px;
     margin-right: 10px;
     background: $white-low;
     border-radius: 1px;
+    @include w768 {
+      width: 24px;
+      margin-right: 6px;
+    }
     &:last-child {
       margin-right: 0px;
     }
