@@ -7,10 +7,8 @@
       align-items: center;
       justify-content: space-between;
       padding: 70px 0;
-      div {
-        line-height: 11px;
-        padding-top: 7px;
-      }
+      
+      
       &::before, &::after {
         content: "";
         position: absolute;
@@ -25,16 +23,39 @@
       &::after {
         left: 50%;
       }
+      @include w1440 {
+        padding: 45px 0;
+      }
+      @include w1024 {
+        padding: 30px 0;
+      }
+      @include w768 {
+        padding: 19px 0;
+      }
     }
     &-block {
       margin: 0 -9px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      @include w768 {
+        margin: 0 -23px;
+        grid-template-columns: 1fr;
+      }
       &-item {
         border-left: 1px solid $white-low;
         min-height: 461px;
+        
+        @include w768 {
+          border-left: none;
+          min-height: 153px;
+          border-bottom: 1px solid $white-low;
+        }
         &:last-child {
           border-right: 1px solid $white-low;
+          @include w768 {
+          border-right: none;
+          border-bottom: none;
+          }
         }
       }
       &-item__infocenter {
@@ -46,17 +67,26 @@
       &-item, &-item__infocenter {
         article {
           padding: 72px 46px 0 39px;
+          @include w768 {
+            padding: 15px 24px 25px;
+          }
         }
         .btn__wrapper {
           padding-top: 32px;
           padding-bottom: 70px;
           margin-top: 0px;
+          @include w768 {
+            padding: 15px 0 0;
+          }
         }
         h3 {
           padding-top: 8px;
         }
         p {
           padding-top: 18px;
+          @include w768 {
+            padding-top: 11px;
+          }
         }
         &:hover {
           transition: .5s;
@@ -74,10 +104,10 @@
         }
       }
     }
-  }
-  &-link {
-    border-bottom: 1px solid $white-low;
-    padding: 30px 0 3px;
-    display: inline-block;
+    &-link {
+      border-bottom: 1px solid $white-low;
+      padding: 0 0 3px;
+      display: inline-block;
+    }
   }
 }

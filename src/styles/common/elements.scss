@@ -4,13 +4,13 @@ body {
   scroll-behavior: smooth;
   font-size: 17px;
   line-height: 28px;
-  @include w768 {
-    font-size: 15px;
-    line-height: 17px;
+  @include w1200 {
+    font-size: 16px;
+    line-height: 24px;
   }
-  @include w480 {
-    font-size: 12px;
-    line-height: 15px;
+  @include w1024 {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -18,7 +18,7 @@ body {
   width: 100%;
   min-height: 100vh;
   transition: .3s;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 h1 {
@@ -54,10 +54,17 @@ h2 {
 
   @include w1440 {
     font-size: 30px;
+    line-height: 36px;
   }
 
   @include w1024 {
-    font-size: 18px;
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  @include w480 {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
@@ -70,10 +77,12 @@ h3 {
 
   @include w1440 {
     font-size: 18px;
+    line-height: 23px;
   }
 
   @include w1024 {
     font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -84,6 +93,10 @@ p {
 time {
   font-style: italic;
   font-size: 15px;
+  @include w768 {
+    font-size: 12px;
+    line-height: 28px;
+  }
 }
 
 .d-flex {
@@ -104,10 +117,6 @@ time {
 
 .justify-end {
   justify-content: flex-end;
-}
-
-.p-l {
-  padding-left: 90px;
 }
 
 .sub-h {
@@ -138,10 +147,17 @@ time {
   padding: 0px 16px;
   margin: 0 auto;
   width: 85%;
-  min-width: 320px;
+  min-width: 310px;
   height: 100%;
   position: relative;
   z-index: 2;
+  @include w1024 {
+    width: 90%;
+  }
+  @include w768 {
+    padding: 0 24px;
+    width: 100%;
+  }
 }
 
 .line-center {
@@ -197,10 +213,10 @@ time {
 
 .phone {
   margin-right: 59px;
-  @include w1440 {
-    margin-right: 20px;
-  }
   @include w1024 {
+    margin-right: 16px;
+  }
+  @include w768 {
     display: none;
   }
   &__wrapper {
@@ -215,6 +231,11 @@ time {
     }
     @include w1440 {
       margin-right: 10px;
+    }
+    @include w1024 {
+      img {
+        max-width: 50%;
+      }
     }
   }
   &__info {
@@ -240,6 +261,10 @@ time {
   border: 1px solid $white-low;
   border-radius: 50%;
   cursor: pointer;
+  @include w1024 {
+    height: 32px;
+    width: 32px;
+  }
 
   &--small {
     height: 40px;
@@ -410,6 +435,8 @@ time {
   height: 2px;
   width: 140px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   @include w768 {
     justify-content: center;
   }
