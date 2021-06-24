@@ -51,12 +51,15 @@
       color: $white-subtext;
       &:first-child {
         padding-left: 0px;
+        text-decoration: none;
       }
       @include w768 {
         padding-left: 0;
         font-size: 14px;
         line-height: 28px;
+        text-decoration: underline;
       }
+      
     }
     a:hover {
       color: white;
@@ -115,7 +118,7 @@
     img {
       height: 24px;
       @include w1024 {
-        height: 50%;
+        height: 15px;
       }
     }
   }

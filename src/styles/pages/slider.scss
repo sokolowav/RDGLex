@@ -31,7 +31,15 @@
       transform: translateY(-50%);
       @include w768 {
         top: 45%;
-        padding-left: 20px;
+        padding: 0 0 0 20px;
+      }
+      @include w480 {
+        padding: 0 16px 0 0;
+      }
+      @include w320 {
+        br {
+          display: none;
+        }
       }
     }
     &-controls {

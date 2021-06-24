@@ -158,8 +158,10 @@ time {
     padding: 0 24px;
     width: 100%;
   }
+  @include w480 {
+    padding: 0 16px;
+  }
 }
-
 .line-center {
   position: relative;
   &:before {
@@ -234,7 +236,7 @@ time {
     }
     @include w1024 {
       img {
-        max-width: 50%;
+        height: 15px;
       }
     }
   }
