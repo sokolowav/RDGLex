@@ -204,12 +204,9 @@ time {
   font-family: 'Roboto', sans-serif;
   line-height: 70px;
 
-  @include w1440 {
-    font-size: 50px;
-  }
-
-  @include w1024 {
-    font-size: 40px;
+  @include w768 {
+    font-size: 48px;
+    line-height: 48px;
   }
 }
 
@@ -281,9 +278,9 @@ time {
       max-width: 70%;
     }
 
-    @include w1440 {
-      height: 50px;
-      width: 50px;
+    @include w768 {
+      height: 60px;
+      width: 60px;
     }
   }
   &:hover {

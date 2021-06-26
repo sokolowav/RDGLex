@@ -1,5 +1,6 @@
 .topping-with-navbar {
   position: relative;
+  min-height: 177px;
   max-height: 378px;
   height: 19.68vw;
   &-background {
@@ -9,8 +10,7 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    height: 19.68vw;
-    max-height: 378px;
+    height: 100%;
     &::after {
       content: '';
       display: block;
@@ -45,19 +45,39 @@
   }     
   &-content {
     position: relative;
+    @include w768 {
+      img {
+        width: 4.67px;
+        height: 9.33px;
+      }
+    }
     a {
       align-items: center;
     }
     span {
       padding-left: 18px;
+      @include w768 {
+        padding-left: 14px;
+      }
     }
     h1 {
       padding-top: 30px;
+      @include w768 {
+        font-size: 24px;
+        line-height: 29px;
+        padding-top: 18px;
+      }
     }
     &-info {
       position: absolute;
-        top: 37%;
-        transform: translateY(-50%);
+      top: 37%;
+      transform: translateY(-50%);
+      @include w768 {
+        top: 35%;
+        span {
+          font-size: 12px;
+        }
+      }      
     }
     &::before, &::after {
       content: "";
@@ -66,6 +86,9 @@
       height: 1px;
       width: 50vw;
       bottom: 24%;
+      @include w768 {
+        bottom: 30%
+      }
     }
     &::before {
       right: 50%;
@@ -79,9 +102,28 @@
 .topping-navbar {
   display:flex;
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
+  height: 29%;
+  align-items: flex-end;
+  @include w1200 {
+    height: 34%;
+  }
+  @include w1024 {
+    height: 37%;
+  }
+  @include w768 {
+    height: 42%;
+  }
+  
   &-element {
+    height: 50%;
     margin-right: 65px;
+    @include w768 {
+      margin-right: 40px;
+    } 
+    @include w320 {
+      margin-right: 15px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -89,7 +131,7 @@
   &-link {
     line-height: 21px;
     font-weight: 600;
-    padding-bottom: 32px;
+    
     &:hover {
       color: $gold;
     }
