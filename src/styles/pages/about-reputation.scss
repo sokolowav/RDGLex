@@ -5,9 +5,17 @@
     grid-template-columns: 64.65% auto;
     column-gap: 3.47%;
     padding: 68px 0 70px;
+    
+    @include w768 {
+      grid-template-columns: 1fr;
+      padding: 0 0 26px;
+    }
   }
   &-left {
     border-right: 1px solid $white-low;
+    @include w768 {
+      border-right: none;
+    }
   }
   h3 {
     font-size: 32px;
@@ -16,16 +24,58 @@
     line-height: 39px;
     color: white;
     padding: 5px 0 52px;
+    @include w1200 {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    @include w768 {
+      font-size: 20px;
+      line-height: 24px;
+      padding: 27px 0;
+      br {
+        display: none;
+      }
+    }
+  }
+  &-right {
+    h3 {
+      @include w768 {
+        padding-bottom: 20px;
+      }
+    }
   }
 }
 
 .feedback {
+  &-list {
+    @include w768 {
+      margin: 0 -23px;
+    }
+    @include w480 {
+      margin: 0 -15px;
+    }
+  }
   &-item {
     display: flex;
     border-top: 1px solid $white-low;
     padding: 40px 50px 40px 0;
+    @include w768 {
+      padding: 24px 23px 26px;
+    }
+    @include w480 {
+      padding: 24px 15px 26px;
+    } 
     &-img {
       padding-right: 35px;
+      @include w1200 {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      @include w768 {
+        display: none;
+      }
     }
     &-service {
       border: 1px solid $white-low;
@@ -35,15 +85,35 @@
       &:hover {
         border-color: $gold;
       }
+      @include w1200 {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      @include w768 {
+        font-size: 13px;
+        padding: 5px 16px 6px;
+      }
     }
     &-name {
       font-size: 24px;
       line-height: 36px;
       padding-top: 21px;
+      @include w1200 {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      @include w768 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 16px;
+      }
     }
     &-text {
       color: $white-subtext;
       padding-top: 12px;
+      @include w768 {
+        padding-top: 8px;
+      }
     }
     &-detail {
       display: flex;
@@ -58,9 +128,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include w768 {
+      display: none;
+    }
     &-container {
       border-top: 1px solid $white-low;
       padding: 72px 50px 30px 0;
+      @include w768 {
+        border-bottom: 1px solid $white-low;
+        padding: 25px 23px 20px;
+      }
     }
     &-numbers {
       display: flex;
@@ -77,6 +154,18 @@
         padding-right: 0;
       }
     }
+    &__mobile {
+      display: none;
+      @include w768 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span {
+          padding-top: 5px;
+        }
+      }
+    }
   }
 }
 
@@ -87,13 +176,29 @@
     &:last-child {
       padding-bottom: 0;
     }
+    @include w768 {
+      padding-bottom: 20px;
+    }
   }
   &-value {
     padding-bottom: 20px;
     font-size: 48px;
     line-height: 56px;
+    @include w1200 {
+      font-size: 44px;
+      line-height: 52px;
+      padding-bottom: 15px;
+    }
+    @include w768 {
+      font-size: 40px;
+      line-height: 47px;
+      padding-bottom: 7px;
+    }
   }
   &-text {
     padding-top: 24px;
+    @include w768 {
+      padding-top: 12px;
+    }
   }
 }

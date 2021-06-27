@@ -89,7 +89,7 @@
           }
         }
         &:hover {
-          transition: .5s;
+          transition: .9s;
           background: url('../images/newsbg.png') no-repeat center center;
           background-size: cover;
           time {
@@ -108,6 +108,9 @@
       border-bottom: 1px solid $white-low;
       padding: 0 0 3px;
       display: inline-block;
+      &:hover {
+        border-color: $gold;
+      }
     }
   }
 }

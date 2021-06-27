@@ -10,6 +10,9 @@
     grid-template-columns: 20.69% auto;
     column-gap: 4.86%;
     padding: 72px 0 80px;
+    @include w1200 {
+      padding: 60px 0 65px;
+    }
     @include w768 {
       grid-template-columns: 1fr;
       padding: 27px 0 30px;
@@ -22,6 +25,10 @@
       font-weight: 600;
       line-height: 39px;
       color: white;
+      @include w1200 {
+        font-size: 26px;
+        line-height: 30px;
+      }
       @include w768 {
         font-size: 20px;
         line-height: 24px;
@@ -36,6 +43,9 @@
   }
   .grey-line-horizontal {
     margin: 80px 0;
+    @include w1200 {
+      margin: 50px 0;
+    }
     @include w768 {
       margin: 26px 0 30px;
     }
@@ -48,6 +58,9 @@
   grid-template-rows: 1fr 1fr;
   grid-gap: 25px;
   margin-bottom: 23px;
+  @include w1200 {
+    grid-gap: 5px 25px;
+  }
   @include w768 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -65,6 +78,13 @@
     }
     &__icon {
       margin-bottom: 20px;
+      @include w1200 {
+        margin-bottom: 10px;
+        img {
+          height: 35px;
+          width: auto;
+        }
+      }
       @include w768 {
         margin-bottom: 0;
         img {
@@ -78,6 +98,11 @@
       font-size: 24px;
       line-height: 29px;
       padding-right: 34px;
+      @include w1200 {
+        font-size: 20px;
+        line-height: 25px;
+        padding-right: 15px;
+      }
       @include w768 {
         font-size: 18px;
         line-height: 22px;
@@ -91,9 +116,12 @@
       line-height: 28px;
       padding-top: 15px;
       padding-right: 34px;
-      @include w768 {
+      @include w1200 {
         font-size: 14px;
         line-height: 22px;
+        padding-right: 10px;
+      }
+      @include w768 {
         padding-right: 0;
       }
       @include w480 {
@@ -156,6 +184,10 @@
     line-height: 29px;
     margin-bottom: 15px;
     padding-right: 34px;
+    @include w1200 {
+      font-size: 20px;
+      line-height: 25px;
+    }
     @include w768 {
       font-size: 18px;
       line-height: 22px;
@@ -170,9 +202,11 @@
     font-size: 17px;
     line-height: 28px;
     padding-right: 34px;
-    @include w768 {
+    @include w1200 {
       font-size: 14px;
       line-height: 22px;
+    }
+    @include w768 {
       padding-right: 0;
       br {
         display: none;

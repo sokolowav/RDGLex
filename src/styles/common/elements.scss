@@ -273,11 +273,13 @@ time {
   &--big {
     height: 84px;
     width: 84px;
-
     img {
       max-width: 70%;
     }
-
+    @include w1200 {
+      height: 72px;
+      width: 72px;
+    }
     @include w768 {
       height: 60px;
       width: 60px;
@@ -580,6 +582,15 @@ time {
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  @include w768 {
+    display: none;
+  }
+  &-none {
+    display: none;
+    @include w768 {
+      display: initial;
+    }
+  }
 }
 
 .active-gold {
