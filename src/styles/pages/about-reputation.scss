@@ -70,7 +70,7 @@
       @include w1200 {
         img {
           width: 100px;
-          height: 100px;
+          height: auto;
         }
       }
       @include w768 {
@@ -199,6 +199,9 @@
     padding-top: 24px;
     @include w768 {
       padding-top: 12px;
+      br {
+        display: none;
+      }
     }
   }
 }

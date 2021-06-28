@@ -328,13 +328,7 @@ time {
   @include w768 {
     height: 32px;
     padding: 9px 15px;
-    font-size: 15px;
-  }
-
-  @include w480 {
     font-size: 12px;
-    padding: 9px 15px;
-    height: 32px;
   }
 
   &-gold {
@@ -482,6 +476,10 @@ time {
   border-bottom: 1px solid $white-low;
   margin: 53px 0;
   padding: 53px 0;
+  @include w768{
+    margin: 26px 0 28px;
+    padding: 26px 0;
+  }
 }
 
 .highlight-box {
@@ -491,6 +489,15 @@ time {
     line-height: 36px;
     color: white;
     padding: 50px 60px;
+    @include w1200 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include w768 {
+      font-size: 18px;
+      line-height: 26px;
+      padding: 25px 30px;
+    }
   }
   &-content {
     height: 100%;

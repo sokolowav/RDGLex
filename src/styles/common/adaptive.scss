@@ -23,8 +23,13 @@
 		@content
 	}
 };
-@mixin w320 {
+@mixin w360 {
 	@media screen and (max-width: 479px){
+		@content
+	}
+};
+@mixin w320 {
+	@media screen and (max-width: 359px){
 		@content
 	}
 };
