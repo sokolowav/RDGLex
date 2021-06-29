@@ -1,4 +1,39 @@
 .about-office {
+  &-adress {
+    display: none;
+    height: 100px;
+    background-color: $background-blue-3;
+    @include w768 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      br {
+        display: none;
+      }
+    }
+    @include w480 {
+      br{
+        display: initial;
+      }
+    }
+  }
+  &-text {
+    color: white;
+    font-size: 18px;
+    line-height: 36px;
+    @include w480 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      span {
+        font-size: 18px;
+        line-height: 36px;
+      }
+    }
+  }
   &-map {
     height: 45.68vw;
     max-height: 877px;
