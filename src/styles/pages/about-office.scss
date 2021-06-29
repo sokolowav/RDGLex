@@ -1,5 +1,17 @@
 .about-office {
-  background: url(../images/about-map.png) no-repeat center center;
-  background-size: cover;
-  height: 877px;
+  &-map {
+    height: 45.68vw;
+    max-height: 877px;
+    min-height: 500px;
+    background: url(../images/about-map.png) no-repeat center center;
+    background-size: cover;
+    @include w768 {
+      background: url(../images/about-map-768.png) no-repeat center center;
+      background-size: cover;
+    }
+    @include w480 {
+      background: url(../images/about-map-360.png) no-repeat center center;
+      background-size: cover;
+    }
+  }
 }
