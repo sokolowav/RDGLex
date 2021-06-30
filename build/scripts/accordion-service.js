@@ -1,7 +1,16 @@
-console.log('menu.js added')
-$(document).ready(function() {
-    $('.header-nav__burger').click(function() {
-        $('.header-nav__burger').toggleClass('open-menu');
-        $('.header-nav__mobile-list').toggleClass('open-menu');
+console.log('accordion-service.js added')
+
+var acc = document.getElementsByClassName("accordion-service");
+var i;
+
+for (i = 0; i < acc.length; i++ ) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("accordion__active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
     });
-});
+}

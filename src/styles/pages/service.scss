@@ -7,12 +7,8 @@
     padding: 60px 0 100px;
     @include w768 {
       grid-template-columns: 1fr;
-    }
-  }
-  &-left {
-    p {
-      padding-right: 28px;
-      padding-top: 42px;
+      padding: 0;
+      margin: 0 -24px;
     }
   }
   &-call-back {
@@ -22,22 +18,52 @@
     align-items: center;
     justify-content: center;
     h3 {
-      padding: 51px 10px 0;
+      padding: 51px 20px 42px;
       font-size: 32px;
       line-height: 39px;
+      text-align: center;
+      @include w1200 {
+        padding: 37px 20px;
+        font-size: 28px;
+        line-height: 34px;
+      }
+      @include w768 {
+        padding: 28px 20px;
+        font-size: 24px;
+        line-height: 29px;
+      }
     }
     img {
-      padding-top: 42px;
-    }
-    p {
-      color: white;
-      text-align: center;
-      padding: 53px 10px 0;
+      @include w1200 {
+        width: 110px;
+      }
+      @include w768 {
+        color: white;
+      }
     }
     span {
       font-size: 24px;
       line-height: 39px;
       font-weight: 700;
+    }
+    &--text {
+      width: 328px;
+      text-align: center;
+      padding-top: 53px;
+      @include w1200 {
+        padding: 49px 16px 0;
+      }
+      @include w768 {
+        width: 564px;
+        padding: 45px 24px 0;
+      }
+      @include w480 {
+        width: 100%;
+        padding: 0 16px;
+      }
+      p {
+        color: white;
+      }
     }
   }
   &-list {
@@ -53,19 +79,45 @@
       &:last-child {
         margin-bottom: 0;
       }
+      @include w768 {
+        margin-bottom: 0;
+        border-bottom: 1px solid $white-low;
+      }
       &-content {
         padding: 38px;
+        @include w768 {
+          padding: 0 24px;
+          h3 {
+            color: white;
+            padding-right: 24px;
+          }
+        }
+        @include w480 {
+          h3 {
+            letter-spacing: 0;
+            padding-right: 5px;
+          }
+        }
         ul {
           list-style-position: outside;
           color: $gold;
           list-style-type: disc;
           padding-left: 18px;
           padding-top: 27px;
+          @include w768 {
+            padding-top: 0;
+          }
           li {
             padding-bottom: 25px;
             padding-left: 6px;
             &:last-child {
               padding-bottom: 3px;
+              @include w768 {
+                padding-bottom: 24px;
+              }
+            }
+            @include w768 {
+              padding-bottom: 20px;
             }
           }
           a {
@@ -80,8 +132,48 @@
     }
   }
   &-summary {
+    padding-right: 28px;
+    padding-top: 42px;
     @include w768 {
       display: none;
+    }
+  }
+
+  /*АККОРДЕОН*/
+  .accordion-service, .accordion-service__empty {
+    @include w768 {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .accordion__active, .service-list-item:hover {
+    @include w768 {
+      h3 {
+        color: $gold;
+      }
+    }
+  }
+  .accordion-service:after {
+    @include w768 {
+      content: '\002B';
+      color: $gold;
+      font-size: 20px;
+      font-weight: bold;
+      float: right;
+    }
+  }
+  .accordion__active:after {
+    @include w768 {  
+      content: "\2212";
+    }
+  }
+  .panel {
+    @include w768{
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
     }
   }
 }
