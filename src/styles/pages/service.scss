@@ -1,13 +1,13 @@
 .service {
   background-color: $background-blue-3;
-  &-content {
-    min-height: 2174px;
-  }
   &-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 30px;
-    padding-top: 60px;
+    padding: 60px 0 100px;
+    @include w768 {
+      grid-template-columns: 1fr;
+    }
   }
   &-left {
     p {
@@ -44,6 +44,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    @include w768 {
+      grid-template-columns: 1fr;
+    }
       &-item {
       background-color: $background-blue-4;
       margin-bottom: 30px;
@@ -74,6 +77,11 @@
           }
         }
       }
+    }
+  }
+  &-summary {
+    @include w768 {
+      display: none;
     }
   }
 }
