@@ -5,18 +5,87 @@
     grid-template-columns: 20.69% auto;
     column-gap: 4.86%;
     padding: 72px 0 104px;
+    @include w1200 {
+      grid-template-columns: 25% auto;
+      padding: 60px 0 86px;
+    }
+    @include w768 {
+      grid-template-columns: 1fr;
+      padding: 0 0 28px;
+    }
   }
   &-left {
     padding-top: 7px;
+    @include w768 {
+      padding-top: 0;
+      margin: 0 -24px; 
+    }
+    p {
+      @include w320 {
+        font-size: 13px;
+      }
+     }
+    .hidden {
+      display: none;
+      @include w768 {
+        display: initial;
+        margin: 0;
+        .btn {
+          height: 48px;
+        }
+      }
+      @include w480 {
+        display: none;
+      }
+    }
+    .btn__stretched {
+      @include w768 {
+        display: none;
+      }
+      @include w480 {
+        display: initial;
+      }
+    }
+  }
+  &-right {
+    @include w768 {
+      padding-top: 27px;
+    }
   }
   &-price-box {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 30px;
     padding: 45px 40px;
     background-color: $background-blue-4;
+    @include w1200 {
+      padding: 40px 35px;
+    }
+    @include w768 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 24px;
+    }
   }
   .highlight-box {
     margin: 53px 0;
+    @include w1200 {
+      margin: 40px 0;
+    }
+    @include w768 {
+      margin: 28px 0;
+    }
+  }
+  .hidden__bottom {
+    display: none;
+    @include w480 {
+      display: block;
+      margin: 0 -16px;
+      .btn {
+        height: 48px;
+      }
+    }
   }
 }
 
@@ -24,12 +93,19 @@
   font-size: 32px;
   line-height: 39px;
   font-weight: 600;
-  padding: 4px 0 30px;
+  padding-top: 10px;
+  @include w768{
+    font-size: 24px;
+    line-height: 29px;
+  }
   &__italic {
     font-size: 15px;
     line-height: 28px;
     font-weight: 400;
-    padding-top: 4px;
+    padding-top: 10px;
     font-style: italic;
+    @include w768{
+      font-size: 12px;
+    }
   }
 }

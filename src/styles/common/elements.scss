@@ -307,14 +307,14 @@ time {
   cursor: pointer;
   transition: .3s;
   @include w1024 {
-    font-size: 17px;
+    font-size: 16px;
     padding: 15px 25px;
     height: 48px;
   }
   @include w768 {
     height: 32px;
     padding: 9px 15px;
-    font-size: 12px;
+    font-size: 14px;
   }
   &__stretched {
     height: 60px;
