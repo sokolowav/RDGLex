@@ -131,6 +131,9 @@
   &-link {
     line-height: 21px;
     font-weight: 600;
+    @include w320 {
+      font-size: 12px;
+    }
     
     &:hover {
       color: $gold;

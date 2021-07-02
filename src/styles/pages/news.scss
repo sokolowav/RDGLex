@@ -38,16 +38,16 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       @include w768 {
-        margin: 0 -23px;
+        margin: 0 -24px;
         grid-template-columns: 1fr;
+      }
+      @include w480 {
+        margin: 0 -16px;
       }
       &-item {
         border-left: 1px solid $white-low;
-        min-height: 461px;
-        
         @include w768 {
           border-left: none;
-          min-height: 153px;
           border-bottom: 1px solid $white-low;
         }
         &:last-child {
@@ -62,21 +62,29 @@
         border-bottom: 1px solid $white-low;
         border-left: 1px solid $white-low;
         border-right: 1px solid $white-low;
-        min-height: 461px;
+        @include w768 {
+          border-left: none;
+          border-right: none;
+        }
       }
       &-item, &-item__infocenter {
         article {
-          padding: 72px 46px 0 39px;
+          padding: 72px 40px 90px;
+          @include w1200 {
+            padding: 44px 32px 57px;
+          }
           @include w768 {
             padding: 15px 24px 25px;
+          }
+          @include w480 {
+            padding: 15px 16px 25px;
           }
         }
         .btn__wrapper {
           padding-top: 32px;
-          padding-bottom: 70px;
           margin-top: 0px;
           @include w768 {
-            padding: 15px 0 0;
+            padding-top: 15px;
           }
         }
         h3 {
