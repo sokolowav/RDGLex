@@ -1,11 +1,5 @@
 .topping {
   position: relative;
-  max-height: 378px;
-  height: 19.69vw;
-  min-height: 129px;
-  @include w1200 {
-    height: 16.79vw;
-  }
   &-background {
     position: absolute;
     top: 0;
@@ -22,28 +16,28 @@
       background: rgba(14, 25, 41, 0.8);
     }
     &__service {
-      background: url('../images/service.png') no-repeat right center;
+      background: url('../images/service.png') no-repeat center center;
       background-size: cover;
     }
     &__service-info {
-      background: url('../images/service.png') no-repeat right center;
+      background: url('../images/service.png') no-repeat center center;
       background-size: cover;
     }
     &__team {
-      background: url('../images/team.png') no-repeat right center;
+      background: url('../images/team.png') no-repeat center center;
       background-size: cover;
     }
     &__news-article {
-      background: url('../images/news-article.png') no-repeat right center;
+      background: url('../images/news-article.png') no-repeat center center;
       background-size: cover;
     }
     &__contacts {
-      background: url('../images/contacts.png') no-repeat right center;
+      background: url('../images/contacts.png') no-repeat center center;
       background-size: cover;
     }
   }     
   &-content {
-    position: relative;
+    display: flex;
     @include w768 {
       img {
         width: 4.67px;
@@ -61,21 +55,24 @@
     }
     h1 {
       padding-top: 30px;
+      @include w1200 {
+        padding-top: 24px;
+      }
       @include w768 {
-        font-size: 24px;
-        line-height: 29px;
         padding-top: 18px;
       }
     }
     &-info {
-      position: absolute;
-      top: 46%;
-      transform: translateY(-50%);
+      margin: auto 0;
+      padding: 66px 0 86px;
       @include w768 {
-        top: 49%;
+        padding: 24px 0 50px;
         span {
           font-size: 12px;
         }
+      }
+      @include w480 {
+        padding: 24px 0;
       }  
     }
   }

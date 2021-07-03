@@ -13,6 +13,10 @@ body {
     line-height: 20px;
   }
 }
+.fixed {
+  position: fixed;
+  overflow: hidden;
+}
 
 .wrapper {
   width: 100%;
@@ -28,17 +32,22 @@ h1 {
   font-weight: 600;
 
   @include w1440 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  @include w1200 {
+    font-size: 42px;
+    line-height: 51px;
   }
 
   @include w1024 {
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 36px;
+    line-height: 42px;
   }
   @include w768 {
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 24px;
+    line-height: 29px;
   }
   @include w480 {
     font-size: 24px;
