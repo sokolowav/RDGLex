@@ -94,9 +94,8 @@
 
 .social-icons {
   display: flex;
-  align-items: flex;
+  align-items: center;
   justify-content: flex-end;
-
   &__item {
     width: 48px;
     height: 48px;
@@ -110,7 +109,7 @@
     @include w1024 {
       width: 32px;
       height: 32px;
-      margin-right: 10px;
+      margin-right: 8px;
     }
 
     &:hover {
