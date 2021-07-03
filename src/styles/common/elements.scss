@@ -593,46 +593,136 @@ time {
 
 .business-card {
   background-color: $background-blue-4;
-  position: relative;
-  padding: 60px 0 65px 60px;
   margin-top: 63px;
-  
+  display: flex;
+  justify-content: space-between;
+  @include w1200 {
+    margin-top: 53px;
+  }
+  @include w768 {
+    margin-top: 43px;
+  }
+  @include w360 {
+    flex-direction: column;
+    margin-top: 23px;
+  }
+  &-right {
+    position: relative;
+    width: 50%;
+    @include w360 {
+      height: 293px;
+      width: 100%;
+    }
+    @include w320 {
+      height: 260px;
+    }
+  }
   &-image {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 50.57%;
+    height: 82%;
+    max-height: 322px;
+    @include w1440 {
+      max-height: 260px;
+    }
+    @include w1024 {
+      max-height: 220px;
+    }
+    @include w768 {
+      max-height: 190px;
+    }
+    @include w480 {
+      max-height: 170px;
+    }
+    @include w360 {
+      max-height: 233px;
+    }
+    @include w320 {
+      max-height: 205px;
+    }
   }
   &-photo {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: 5;
-    width: 48.29%;
+    height: 93%;
+    max-height: 354px;
+    @include w1024 {
+      max-height: 245px;
+    }
+    @include w768 {
+      max-height: 227px;
+    }
+    @include w480 {
+      max-height: 210px;
+    }
+    @include w360{
+      max-height: 293px;
+    }
+    @include w320 {
+      max-height: 240px;
+    }
   }
   img {
-    object-fit: contain;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
   }
   &-name {
-    padding: 0 0 20px 0;
+    padding-bottom: 20px;
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
     line-height: 39px;
     color: white;
+    @include w1200 {
+      font-size: 26px;
+      line-height: 30px;
+      padding-bottom: 15px;
+
+    }
+    @include w768 {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
   }
   &-post {
     font-size: 15px;
     color: $white-subtext;
     font-style: italic;
+    @include w768 {
+      font-size: 12px;
+      line-height: 22px;
+    }
   }
   &-phone {
     padding-top:  58px;
     padding-bottom: 15px;
     font-size: 24px;
     font-weight: 600;
+    @include w1200 {
+      padding-top:  53px;
+    }
+    @include w768 {
+      padding-top:  48px;
+    }
+  }
+  &-left {
+    padding: 60px 0 65px 60px;
+    @include w1200 {
+      padding: 42px 0 49px 42px;
+    }
+    @include w768 {
+      padding: 25px 0 33px 25px;
+    }
+    @include w480 {
+      padding: 25px 0 33px 22px;
+    }
+    @include w360 {
+      padding: 25px 0 0 22px;
+    }
   }
 }
 

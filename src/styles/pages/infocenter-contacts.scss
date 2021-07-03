@@ -5,10 +5,21 @@
     grid-template-columns: auto 32.15%;
     column-gap: 3.47%;
     padding: 68px 0 70px;
+    @include w1200 {
+      padding: 45px 0;
+    }
+    @include w768 {
+      padding: 0;
+      grid-template-columns: 1fr;
+    }
   }
   &-left {
     border-right: 1px solid $white-low;
-    padding-right: 50px;
+    padding-right: 5.39%;
+    @include w768 {
+      border-right: none;
+      padding-right: 0;
+    }
   }
 
   h3 {
@@ -18,6 +29,15 @@
     line-height: 39px;
     color: white;
     padding: 5px 0 46px;
+    @include w1200 {
+      font-size: 26px;
+      line-height: 30px;
+      padding: 28px 0 22px;
+    }
+    @include w768 {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &-right {
     h3 {
@@ -27,14 +47,33 @@
     &-element {
       border-bottom: 1px solid $white-low;
       padding: 30px 0 35px;
+      @include w768 {
+        padding: 15px 130px 28px 0;
+        min-height: 108px;
+      }
+      @include w480 {
+        padding-right: 0;
+      }
       &:first-child {
-        padding-top: 0px;
+        padding-top: 0;
+        min-height: 0;
+        @include w768 {
+          padding-bottom: 30px;
+        }
       }
       a {
         font-size: 22px;
         font-weight: 600;
         line-height: 27px;
         padding-top: 8px;
+        @include w1200 {
+          font-size: 19px;
+          line-height: 23px;
+        }
+        @include w768 {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
     }
   }
@@ -42,5 +81,12 @@
     border-bottom: 1px solid $white-low;
     padding: 37px 0 3px;
     display: inline-block;
+    @include w768 {
+      padding: 22px 0 3px;
+      margin-bottom: 38px;
+      @include w480 {
+        margin-bottom: 34px;
+      }
+    }
   }
 }
