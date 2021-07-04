@@ -134,12 +134,12 @@
       padding-top: 21px;
     }
   }
-  &-map .about-office-map {
-    @include w768 {
-      display: none;
-    }
-    @include w480 {
-      display: block;
-    }
-  }
+  //&-map .about-office-map {
+  //  @include w768 {
+  //    display: none;
+  //  }
+  //  @include w480 {
+  //    display: block;
+  //  }
+  //}
 }
