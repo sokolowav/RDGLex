@@ -1,20 +1,52 @@
 .contacts {
   background-color: $background-blue-3;
-  &-adress {
-    span, a {
-      font-size: 24px;
-      line-height: 36px;
-    }
-  }
   &-container {
     display: grid;
     grid-template-columns: auto 31.74%;
     column-gap: 3.47%;
     padding: 80px 0 80px;
+    @include w1200 {
+      padding: 51px 0 53px; 
+    }
+    @include w768 {
+      padding: 22px 0 27px;
+      grid-template-columns: 1fr;
+    }
+    @include w480 {
+      padding: 26px 0 10px;
+    }
   }
   &-left {
     border-right: 1px solid $white-low;
-    padding-right: 70px;
+    padding-right: 7.51%;
+    @include w768 {
+      border-right: none;
+      padding: 0 0 20px;
+      border-bottom: 1px solid $white-low;
+    }
+  }
+  &-adress {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    @include w1200 {
+      padding: 28px 0 25px;
+    }
+    @include w768 {
+      padding: 17px 0 11px;
+    }
+    span, a {
+      font-size: 24px;
+      line-height: 36px;
+      @include w1200 {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      @include w768 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
   }
   &-right {
     padding-top: 15px;
@@ -22,20 +54,50 @@
       padding-top: 6px;
     }
     .btn__wrapper {
-      margin: 45px 0 48px;
-      &:last-child {
-        margin-bottom: 20px;
+      margin-top: 33px;
+      @include w1200 {
+        margin-top: 23px;
+      }
+      @include w768 {
+        margin-top: 0;
+      }
+      @include w480 {
+        margin-top: 23px;
+      }
+      .btn {
+        height: 48px;
+        @include w768 {
+          width: 328px;
+        }
+        @include w320 {
+          width: 100%;
+        }
       }
     }
-
+    &-block {
+      padding-bottom: 40px;
+      @include w1200 {
+        padding-bottom: 24px;
+      }
+      @include w768 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 31px;
+      }
+      @include w480 {
+        flex-direction: column;
+      }
+    }
   }
-  &-adress {
-    display: flex;
-    align-items: center;
-    padding: 40px 0;
+  &-phone {
+    font-size: 24px;
+    line-height: 29px;
   }
   &-icon {
     padding-right: 28px;
+    @include w768 {
+      padding-right: 14px;
+    }
   }
   h3 {
     padding-top: 15px;
@@ -44,11 +106,40 @@
     font-weight: 600;
     line-height: 39px;
     color: white;
+    @include w1200 {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    @include w768 {
+      padding: 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &-sub-text {
     font-size: 15px;
+    @include w768 {
+      font-size: 14px;
+    }
   }
   &-mail {
     padding-top: 38px;
+    @include w1200 {
+      padding-top: 27px;
+    }
+    @include w768 {
+      padding-top: 16px;
+    }
+    @include w480 {
+      padding-top: 21px;
+    }
+  }
+  &-map .about-office-map {
+    @include w768 {
+      display: none;
+    }
+    @include w480 {
+      display: block;
+    }
   }
 }
