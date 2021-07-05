@@ -11,7 +11,7 @@ function initMap() {
   ];
   const opt = {
     center: pos,
-    zoom: 15,
+    zoom: 13,
     streetViewControl: false,
     mapTypeControl: false,
     gestureHandling: 'greedy',
