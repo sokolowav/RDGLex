@@ -1,4 +1,4 @@
-.slider {
+.swiper {
   position: relative;
   max-height: 672px;
   min-height: 200px;
@@ -36,7 +36,7 @@
       @include w480 {
         padding: 0 16px 0 0;
       }
-      @include w320 {
+      @include w360 {
         br {
           display: none;
         }
@@ -46,22 +46,58 @@
       }
     }
     &-controls {
-      position: absolute;
-      width: 100%;
-      bottom: 5%;
-      height: 48px;
+      position: relative;
+      transform: translateY(-100%);
+      bottom: 0;
+      height: 128px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-right: 32px;
+      z-index: 5;
+      @include w1200 {
+        height: 100px;
+      }
+      @include w1024 {
+        height: 80px;
+      }
       @include w768 {
         justify-content: center;
-        padding-right: 0;
-        height: 16px;
+        height: 48px;
       } 
+      @include w480 {
+        height: 34px;
+      }
+    }
+  }
+  &-pagination {
+    height: 2px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include w768 {
+      justify-content: center;
+    }
+    &-bullet {
+      width: 40px;
+      height: 2px;
+      margin-right: 10px;
+      background: $white-low;
+      border-radius: 1px;
+      @include w768 {
+        width: 24px;
+        margin-right: 6px;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      &-active {
+        background: $gold;
+      }
     }
   }
 }
+
 
 
 

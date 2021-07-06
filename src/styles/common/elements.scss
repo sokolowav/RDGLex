@@ -400,6 +400,8 @@ time {
 }
 
 .swipers-arrows {
+  position: absolute;
+  right: 0;
   display: flex;
   align-items: center;
 
@@ -440,33 +442,33 @@ time {
   }
 }
 
-.bullets {
-  height: 2px;
-  width: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @include w768 {
-    justify-content: center;
-  }
-  &-item {
-    width: 40px;
-    height: 2px;
-    margin-right: 10px;
-    background: $white-low;
-    border-radius: 1px;
-    @include w768 {
-      width: 24px;
-      margin-right: 6px;
-    }
-    &:last-child {
-      margin-right: 0px;
-    }
-    &-active {
-      background: $gold;
-    }
-  }
-}
+//.bullets {
+//  height: 2px;
+//  width: 140px;
+//  display: flex;
+//  align-items: center;
+//  justify-content: space-between;
+//  @include w768 {
+//    justify-content: center;
+//  }
+//  &-item {
+//    width: 40px;
+//    height: 2px;
+//    margin-right: 10px;
+//    background: $white-low;
+//    border-radius: 1px;
+//    @include w768 {
+//      width: 24px;
+//      margin-right: 6px;
+//    }
+//    &:last-child {
+//      margin-right: 0px;
+//    }
+//    &-active {
+//      background: $gold;
+//    }
+//  }
+//}
 
 .mob-none {
   @include w480 {
