@@ -12,6 +12,11 @@
     grid-template-columns: 23% 54% 23%;
     height: 6.98vw;
     align-items: center;
+    a {
+      @include w1200 {
+      font-size: 14px;
+      }
+    }
     @include w768 {
       display: flex;
       justify-content: space-between;
@@ -27,13 +32,12 @@
     margin-left: 60px;
     @include w1024 {
       margin-left: 16px;
-    }
-    img {
-      @include w1024 {
+      img {
         width: 76.77px;
         height: 32px;
-      }
     }
+    }
+     
   }
   &-nav {
     display: grid;

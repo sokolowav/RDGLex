@@ -26,14 +26,14 @@ console.log('swiper-feedback.js added')
   });
 
   if (windowWidth < 1024) {
-    swiper.destroy(false, true)
+    swiper.destroy()
     swiper = null
   }
 
   const processWidthChange = () => {
     windowWidth = window.innerWidth
     if (windowWidth < 1024) {
-      swiper.destroy(false, true)
+      swiper.destroy( true, true )
       swiper = null
     } else {
       swiper = new Swiper('.swiper-container', {

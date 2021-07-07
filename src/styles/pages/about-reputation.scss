@@ -60,6 +60,12 @@
 }
 
 .feedback {
+  .swiper-container {
+    @include w768 {
+      display: flex;
+      direction: column;
+    }
+  }
   &-item {
     display: flex;
     border-top: 1px solid $white-low;
