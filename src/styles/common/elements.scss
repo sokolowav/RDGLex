@@ -753,5 +753,12 @@ time {
 }
 
 .show-more__hidden {
-  display: none;
+  display: none !important;
+  &-hight-width {
+    display: none;
+    @include w768 {
+      display: block;
+    }
+  }
 }
+
