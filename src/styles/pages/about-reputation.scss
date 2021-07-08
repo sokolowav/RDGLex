@@ -60,12 +60,6 @@
 }
 
 .feedback {
-  .swiper-container {
-    @include w768 {
-      display: flex;
-      direction: column;
-    }
-  }
   &-item {
     display: flex;
     border-top: 1px solid $white-low;
@@ -217,9 +211,4 @@
       }
     }
   }
-  //.swiper-slide {
-  //  @include w768 {
-  //    width: 100vw;
-  //  }
-  //}
 }
