@@ -134,12 +134,11 @@
       padding-top: 21px;
     }
   }
-  //&-map .about-office-map {
-  //  @include w768 {
-  //    display: none;
-  //  }
-  //  @include w480 {
-  //    display: block;
-  //  }
-  //}
+
+  .modalbox-consult, .modalbox-callback {
+    color: white;
+    &:hover {
+      color: black;
+    }
+  }
 }

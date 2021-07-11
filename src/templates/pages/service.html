@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
     <link rel="stylesheet" href="styles/app.min.css" />
+    <link rel="stylesheet" href="libs/jquery.fancybox.min.css" />
 </head>
 <body>
     <div class="wrapper">
@@ -265,7 +266,7 @@
                                 </p>
                             </div>
                             <div class="btn__wrapper btn__wrapper__stretched">
-                                <button class="btn btn-gold btn__stretched" type="button" data-consult>Обратный звонок</button>
+                                <a class="btn btn-gold btn__stretched modalbox-callback" type="button" href="#modal-callback" rel="nofollow">Обратный звонок</a>
                             </div>
                         </div>
                     </div>
@@ -314,9 +315,68 @@
       </div>
     </div>
   </footer>
-</div>  
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</div>
+
+<!--МОДАЛЬНЫЕ ОКНА-->
+
+<div class="modal modal-callback" id="modal-callback" style="display: none">
+    <div class="modal-wrapper">
+      <div class="modal-header">
+        <div class="modal-header-content">
+          <h3><span class="text-gold">Обратная</span> связь</h3>
+          <div class="text-sub">Перезвоним через 5 минут</div>
+          <a href="mailto: inform@rdglex.ru" class="email text-gold">inform@rdglex.ru</a>
+          <img src="images/modals/logo-bg.svg" alt="RDGLex-logo-bg" class="modal-header-logo"/>
+        </div>
+      </div>
+      <form class="modal-form">
+        <div class="modal-form__header">
+          <h3><span class="text-gold">Обратная</span> связь</h3>
+          <div class="text-sub">Перезвоним через 5 минут</div>
+        </div>
+
+        <div class="form-input">
+          <input type="text" placeholder="Ваше имя" id="form-name" name="name" data-mask="letters" />
+        </div>
+
+        <div class="form-input">
+          <input type="tel" placeholder="+7 (___) ___-__-__" id="form-tel" name="tel" data-mask="tel" />
+        </div>
+
+        <div class="form-input">
+          <textarea placeholder="Опишите проблему..." id="form-question" name="message"></textarea>
+        </div>
+
+        <div class="form-input agreement">
+          Нажимая на кнопку «Отправить» вы даете согласие на <a href="#">обработку персональных данных</a>
+        </div>
+        
+        <button class="btn btn-gold" id="form-send-callback" type="submit">Отправить</button>
+        <input type="hidden" name="formType" value="callback" />
+      </form>
+    </div>
+    <div class="modal-close">
+      <div class="modal-close__btn">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-success" id="modal-success" style="display: none">
+    <h3 class="text-gold">Заявка отправлена</h3>
+    <div class="text-sub">В ближайшее время мы свяжемся с <span class="text-gold">Вами</span></div>
+    <svg id="successAnimation" class="animated" xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 70 70">
+      <path id="successAnimationResult" fill="#D8D8D8" d="M35,60 C21.1928813,60 10,48.8071187 10,35 C10,21.1928813 21.1928813,10 35,10 C48.8071187,10 60,21.1928813 60,35 C60,48.8071187 48.8071187,60 35,60 Z M23.6332378,33.2260427 L22.3667622,34.7739573 L34.1433655,44.40936 L47.776114,27.6305926 L46.223886,26.3694074 L33.8566345,41.59064 L23.6332378,33.2260427 Z"/>
+      <circle id="successAnimationCircle" cx="35" cy="35" r="24" stroke="#979797" stroke-width="2" stroke-linecap="round" fill="transparent"/>
+      <polyline id="successAnimationCheck" stroke="#979797" stroke-width="2" points="23 34 34 43 47 27" fill="transparent"/>
+    </svg>
+  </div>
+ 
+<script src="libs/jquery.js"></script>
+<script src="libs/jquery.fancybox.min.js"></script>
 <script src="scripts/menu.js" type="module"></script>
 <script src="scripts/accordion-service.js"></script>
+<script src="scripts/fancybox.js"></script>
+
 </body>
 </html>
