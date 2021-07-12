@@ -6,6 +6,7 @@
   }
 
   &-wrapper {
+    max-width: 1120px;
     display: flex;
     align-items: stretch;
 
@@ -19,6 +20,7 @@
   &-header {
     position: relative;
     flex: 1;
+    max-width: 491px;
 
     @include w768 {
       display: none;
@@ -91,8 +93,11 @@
         display: block;
       }
     }
-
+    @include w1024 {
+      max-width: 580px;
+    }
     @include w768 {
+      max-width: 100%;
       width: 100%;
       padding: 80px 30px;
       font-size: 14px;

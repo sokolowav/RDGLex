@@ -124,6 +124,7 @@
       display: flex;
       align-items: center;
       padding-top: 17px;
+      cursor: pointer;
       span {
         padding-right: 12.5px;
       }
@@ -212,3 +213,40 @@
     }
   }
 }
+
+/* РАЗВЕРНУТЬ/СВЕРНУТЬ */
+
+.limiter {
+  max-height: 100px;
+  overflow: hidden;
+  position: relative;
+  &__show {
+    max-height: unset;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(32, 52, 86, 0), rgba(32, 52, 86, 1));
+    height: 50px;
+    width: 100%;
+    opacity: 1;
+    transition: 0.3s;
+    @include w768 {
+      height: 25px;
+    }
+    &__hide {
+      opacity: 0;
+    }
+  }
+}
+
+.read-more-button__hide {
+    img {
+      transform: rotate(180deg);
+    }
+} 
+.hidden {
+  display: none;
+}
+

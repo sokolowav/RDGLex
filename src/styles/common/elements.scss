@@ -700,22 +700,6 @@ time {
   }
 }
 
-.gradient {
-  background: linear-gradient($white-subtext, rgba(255,255,255,0));
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  @include w768 {
-    display: none;
-  }
-  &-none {
-    display: none;
-    @include w768 {
-      display: initial;
-    }
-  }
-}
-
 .active-gold {
   color: $gold;
 }
