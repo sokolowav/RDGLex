@@ -66,6 +66,7 @@
       }
       .btn {
         height: 48px;
+        display: inline-block;
         @include w768 {
           width: 328px;
         }

@@ -248,29 +248,7 @@
   }
 }
 
-#modal-service {
-  .modal-header {
-    background: url('/images/modals/service-bg.png') no-repeat center center;
-    background-size: cover;
-  }
-}
 
-#modal-rate {
-  .modal-header {
-    background: url('/images/modals/rate-bg.png') no-repeat center center;
-    background-size: cover;
-  }
-}
-
-#modal-rate-base, #modal-rate-full {
-
-  .modal-wrapper {
-    display: block;
-    background: transparent;
-    color: $white-text;
-  }
-  
-}
 
 #modal-success {
   text-align: center;
