@@ -2,7 +2,7 @@ console.log('map.js added')
 
 
 function initMap() {
-  const pos = {lat: 59.94349, lng: 30.37213};
+  const pos = {lat: 59.94000, lng: 30.36402767723373};
   const posMarker = {lat: 59.93195126447944, lng: 30.36402767723373};
   let popupContent = '<div class="about-office-popup-content"><p class="about-office-popup-content-text"><span class="text-gold"><b>Санкт-Петербург <br></b></span>1-я Советская ул., 6/1, офис 217 БЦ «Искра»</p></div>'
   const colorScheme = [
