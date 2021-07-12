@@ -1,7 +1,10 @@
 console.log('map.js added')
 
+
 function initMap() {
-  const pos = {lat: 59.93195126447944, lng: 30.36402767723373};
+  const pos = {lat: 59.94349, lng: 30.37213};
+  const posMarker = {lat: 59.93195126447944, lng: 30.36402767723373};
+  let popupContent = '<div class="about-office-popup-content"><p class="about-office-popup-content-text"><span class="text-gold"><b>Санкт-Петербург <br></b></span>1-я Советская ул., 6/1, офис 217 БЦ «Искра»</p></div>'
   const colorScheme = [
     '#1b2330',
     '#1d2a42',
@@ -11,7 +14,7 @@ function initMap() {
   ];
   const opt = {
     center: pos,
-    zoom: 13,
+    zoom: 14,
     streetViewControl: false,
     mapTypeControl: false,
     gestureHandling: 'greedy',
@@ -305,9 +308,14 @@ function initMap() {
   };
   let map = new google.maps.Map(document.getElementById("map"), opt);
   let marker = new google.maps.Marker({
-    position: pos,
+    position: posMarker,
     icon: './images/icons/mapIcon.svg',
     map: map,
   });
-} 
+  let infowindow = new google.maps.InfoWindow({
+    content: popupContent,
+});
 
+infowindow.open(map, marker);
+
+} 

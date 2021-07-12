@@ -43,7 +43,49 @@
 }
 #map {
   height: 45.68vw;
-    max-height: 877px;
-    min-height: 500px;
-    width: 100%;
+  max-height: 877px;
+  min-height: 500px;
+  width: 100%;
+}
+.about-office-popup-content {
+  display: flex;
+  background: url('../images/background-map.png') no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  width: 491px;
+  height: 229px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: -33px -40px;
+  font-family: Montserrat;
+  
+  @include w768 {
+    display: none;
+  }
+  &-text {
+    color: white;
+    font-size: 16px;
+    line-height: 36px;
+    span {
+      font-size: 20px;
+      line-height: 36px;
+      font-weight: 600;
+    }
+  }
+}
+.gm-style-iw {
+  overflow: visible !important;
+  @include w768 {
+    display: none !important;
+  }
+  &-t::after {
+    display: none !important;
+  }
+  div {
+    overflow: visible !important;
+  }
+}
+.gm-ui-hover-effect {
+  display: none !important;
 }
