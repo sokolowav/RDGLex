@@ -59,8 +59,7 @@
   justify-content: center;
   margin: -33px -40px;
   font-family: Montserrat;
-  position: relative !important;
-  z-index: 50 !important;
+  
   
   @include w768 {
     display: none;
@@ -90,10 +89,4 @@
 }
 .gm-ui-hover-effect {
   display: none !important;
-}
-.gm-style {
-  img {
-    position: relative !important;
-    z-index: 180 !important;
-  }
 }
