@@ -1,28 +1,28 @@
 .infocenter-news {
-  &-control {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 0 75px;
-    @include w1200 {
-      padding: 45px 0 51px;
-    }
-    @include w768 {
-      padding: 32px 0 27px;
-    }
-    @include w480 {
-      padding: 24px 0 18px;
-    }
-    span {
-      padding-top: 18px;
-      @include w1200 {
-        padding-top: 12px;
-      }
-      @include w768 {
-        padding-top: 6px;
-        font-size: 12px;
-      }
-    }
-  }  
+	&-control {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 60px 0 75px;
+		@include w1200 {
+			padding: 45px 0 51px;
+		}
+		@include w768 {
+			padding: 32px 0 27px;
+		}
+		@include w480 {
+			padding: 24px 0 18px;
+		}
+		span {
+			padding-top: 18px;
+			@include w1200 {
+				padding-top: 12px;
+			}
+			@include w768 {
+				padding-top: 6px;
+				font-size: 12px;
+			}
+		}
+	}
 }

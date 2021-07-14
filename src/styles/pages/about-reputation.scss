@@ -1,252 +1,251 @@
 .about-reputation {
-    background-color: $background-blue-3;
-  &-container {
-    display: grid;
-    grid-template-columns: 64.65% auto;
-    column-gap: 3.47%;
-    padding: 68px 0 70px;
-    
-    @include w768 {
-      grid-template-columns: 1fr;
-      padding: 0 0 26px;
-    }
-  }
-  &-left {
-    border-right: 1px solid $white-low;
-    @include w768 {
-      width: 100vw;
-      border-right: none;
-      margin: 0 -24px;
-      h3 {
-        padding-left: 24px;
-      }
-      @include w480 {
-        margin: 0 -16px;
-        h3 {
-          padding-left: 16px;
-        }
-      }
-    }
-  }
-  h3 {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 39px;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 52px;
-    @include w1200 {
-      font-size: 26px;
-      line-height: 30px;
-    }
-    @include w768 {
-      font-size: 20px;
-      line-height: 24px;
-      padding-top: 27px;
-      padding-bottom: 27px;
-      br {
-        display: none;
-      }
-    }
-  }
-  &-right {
-    h3 {
-      @include w768 {
-        padding-bottom: 20px;
-      }
-    }
-  }
+	background-color: $background-blue-3;
+	&-container {
+		display: grid;
+		grid-template-columns: 64.65% auto;
+		column-gap: 3.47%;
+		padding: 68px 0 70px;
+
+		@include w768 {
+			grid-template-columns: 1fr;
+			padding: 0 0 26px;
+		}
+	}
+	&-left {
+		border-right: 1px solid $white-low;
+		@include w768 {
+			width: 100vw;
+			border-right: none;
+			margin: 0 -24px;
+			h3 {
+				padding-left: 24px;
+			}
+			@include w480 {
+				margin: 0 -16px;
+				h3 {
+					padding-left: 16px;
+				}
+			}
+		}
+	}
+	h3 {
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 39px;
+		color: white;
+		padding-top: 5px;
+		padding-bottom: 52px;
+		@include w1200 {
+			font-size: 26px;
+			line-height: 30px;
+		}
+		@include w768 {
+			font-size: 20px;
+			line-height: 24px;
+			padding-top: 27px;
+			padding-bottom: 27px;
+			br {
+				display: none;
+			}
+		}
+	}
+	&-right {
+		h3 {
+			@include w768 {
+				padding-bottom: 20px;
+			}
+		}
+	}
 }
 
 .feedback {
-  &-item {
-    display: flex;
-    border-top: 1px solid $white-low;
-    padding: 40px 50px 40px 0;
-    @include w768 {
-      padding: 24px 23px 26px;
-    }
-    @include w480 {
-      padding: 24px 15px 26px;
-    } 
-    &-img {
-      padding-right: 35px;
-      @include w1200 {
-        img {
-          width: 100px;
-          height: auto;
-        }
-      }
-      @include w768 {
-        display: none;
-      }
-    }
-    &-service {
-      border: 1px solid $white-low;
-      border-radius: 30px;
-      padding: 5px 25px 7px;
-      display: inline-block;
-      &:hover {
-        border-color: $gold;
-      }
-      @include w1200 {
-        font-size: 14px;
-        line-height: 24px;
-      }
-      @include w768 {
-        font-size: 13px;
-        padding: 5px 16px 6px;
-      }
-    }
-    &-name {
-      font-size: 24px;
-      line-height: 36px;
-      padding-top: 21px;
-      @include w1200 {
-        font-size: 20px;
-        line-height: 25px;
-      }
-      @include w768 {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 16px;
-      }
-    }
-    &-text {
-      color: $white-subtext;
-      padding-top: 12px;
-      @include w768 {
-        padding-top: 8px;
-      }
-    }
-    &-detail {
-      display: flex;
-      align-items: center;
-      padding-top: 17px;
-      cursor: pointer;
-      span {
-        padding-right: 12.5px;
-      }
-    }
-  }
-  &-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include w768 {
-      display: none;
-    }
-    &-container {
-      border-top: 1px solid $white-low;
-      padding: 72px 50px 30px 0;
-      @include w768 {
-        border-bottom: 1px solid $white-low;
-        padding: 25px 23px 20px;
-      }
-    }
-    &-numbers {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    &-number {
-      padding: 0 23px;
-      font-weight: 600px;
-      cursor: pointer;
-      &:hover {
-        color: $gold;
-      }
-      &__active {
-        color: $gold;
-      }
-    }
-    
-    &__mobile {
-      display: none;
-      @include w768 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        span {
-          padding-top: 5px;
-        }
-      }
-    }
-  }
+	&-item {
+		display: flex;
+		border-top: 1px solid $white-low;
+		padding: 40px 50px 40px 0;
+		@include w768 {
+			padding: 24px 23px 26px;
+		}
+		@include w480 {
+			padding: 24px 15px 26px;
+		}
+		&-img {
+			padding-right: 35px;
+			@include w1200 {
+				img {
+					width: 100px;
+					height: auto;
+				}
+			}
+			@include w768 {
+				display: none;
+			}
+		}
+		&-service {
+			border: 1px solid $white-low;
+			border-radius: 30px;
+			padding: 5px 25px 7px;
+			display: inline-block;
+			&:hover {
+				border-color: $gold;
+			}
+			@include w1200 {
+				font-size: 14px;
+				line-height: 24px;
+			}
+			@include w768 {
+				font-size: 13px;
+				padding: 5px 16px 6px;
+			}
+		}
+		&-name {
+			font-size: 24px;
+			line-height: 36px;
+			padding-top: 21px;
+			@include w1200 {
+				font-size: 20px;
+				line-height: 25px;
+			}
+			@include w768 {
+				font-size: 16px;
+				line-height: 20px;
+				padding-top: 16px;
+			}
+		}
+		&-text {
+			color: $white-subtext;
+			padding-top: 12px;
+			@include w768 {
+				padding-top: 8px;
+			}
+		}
+		&-detail {
+			display: flex;
+			align-items: center;
+			padding-top: 17px;
+			cursor: pointer;
+			span {
+				padding-right: 12.5px;
+			}
+		}
+	}
+	&-nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include w768 {
+			display: none;
+		}
+		&-container {
+			border-top: 1px solid $white-low;
+			padding: 72px 50px 30px 0;
+			@include w768 {
+				border-bottom: 1px solid $white-low;
+				padding: 25px 23px 20px;
+			}
+		}
+		&-numbers {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-number {
+			padding: 0 23px;
+			font-weight: 600px;
+			cursor: pointer;
+			&:hover {
+				color: $gold;
+			}
+			&__active {
+				color: $gold;
+			}
+		}
+
+		&__mobile {
+			display: none;
+			@include w768 {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				span {
+					padding-top: 5px;
+				}
+			}
+		}
+	}
 }
 
 .indicators {
-  padding-top: 2px;
-  &-item {
-    padding-bottom: 48px;
-    &:last-child {
-      padding-bottom: 0;
-    }
-    @include w768 {
-      padding-bottom: 20px;
-    }
-  }
-  &-value {
-    padding-bottom: 20px;
-    font-size: 48px;
-    line-height: 56px;
-    @include w1200 {
-      font-size: 44px;
-      line-height: 52px;
-      padding-bottom: 15px;
-    }
-    @include w768 {
-      font-size: 40px;
-      line-height: 47px;
-      padding-bottom: 7px;
-    }
-  }
-  &-text {
-    padding-top: 24px;
-    @include w768 {
-      padding-top: 12px;
-      br {
-        display: none;
-      }
-    }
-  }
+	padding-top: 2px;
+	&-item {
+		padding-bottom: 48px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+		@include w768 {
+			padding-bottom: 20px;
+		}
+	}
+	&-value {
+		padding-bottom: 20px;
+		font-size: 48px;
+		line-height: 56px;
+		@include w1200 {
+			font-size: 44px;
+			line-height: 52px;
+			padding-bottom: 15px;
+		}
+		@include w768 {
+			font-size: 40px;
+			line-height: 47px;
+			padding-bottom: 7px;
+		}
+	}
+	&-text {
+		padding-top: 24px;
+		@include w768 {
+			padding-top: 12px;
+			br {
+				display: none;
+			}
+		}
+	}
 }
 
 /* РАЗВЕРНУТЬ/СВЕРНУТЬ */
 
 .limiter {
-  max-height: 100px;
-  overflow: hidden;
-  position: relative;
-  &__show {
-    max-height: unset;
-  }
+	max-height: 100px;
+	overflow: hidden;
+	position: relative;
+	&__show {
+		max-height: unset;
+	}
 
-  .bottom {
-    position: absolute;
-    bottom: 0;
-    background: linear-gradient(rgba(32, 52, 86, 0), rgba(32, 52, 86, 1));
-    height: 50px;
-    width: 100%;
-    opacity: 1;
-    transition: 0.3s;
-    @include w768 {
-      height: 25px;
-    }
-    &__hide {
-      opacity: 0;
-    }
-  }
+	.bottom {
+		position: absolute;
+		bottom: 0;
+		background: linear-gradient(rgba(32, 52, 86, 0), rgba(32, 52, 86, 1));
+		height: 50px;
+		width: 100%;
+		opacity: 1;
+		transition: 0.3s;
+		@include w768 {
+			height: 25px;
+		}
+		&__hide {
+			opacity: 0;
+		}
+	}
 }
 
 .read-more-button__hide {
-    img {
-      transform: rotate(180deg);
-    }
-} 
-.hidden {
-  display: none;
+	img {
+		transform: rotate(180deg);
+	}
 }
-
+.hidden {
+	display: none;
+}

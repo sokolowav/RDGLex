@@ -1,124 +1,125 @@
 .news {
-  background: $background-blue-3;
-  &-content {
-    &-head {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 70px 0;
-      
-      
-      &::before, &::after {
-        content: "";
-        position: absolute;
-        background: $white-low;
-        height: 1px;
-        width: 50vw;
-        bottom: 0;
-      }
-      &::before {
-        right: 50%;
-      }
-      &::after {
-        left: 50%;
-      }
-      @include w1440 {
-        padding: 45px 0;
-      }
-      @include w1024 {
-        padding: 30px 0;
-      }
-      @include w768 {
-        padding: 19px 0;
-      }
-    }
-    &-block {
-      margin: 0 -9px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      @include w768 {
-        margin: 0 -24px;
-        grid-template-columns: 1fr;
-      }
-      @include w480 {
-        margin: 0 -16px;
-      }
-      &-item {
-        border-left: 1px solid $white-low;
-        @include w768 {
-          border-left: none;
-          border-bottom: 1px solid $white-low;
-        }
-        &:last-child {
-          border-right: 1px solid $white-low;
-          @include w768 {
-          border-right: none;
-          border-bottom: none;
-          }
-        }
-      }
-      &-item__infocenter {
-        border-bottom: 1px solid $white-low;
-        border-left: 1px solid $white-low;
-        border-right: 1px solid $white-low;
-        @include w768 {
-          border-left: none;
-          border-right: none;
-        }
-      }
-      &-item, &-item__infocenter {
-        article {
-          padding: 72px 40px 90px;
-          @include w1200 {
-            padding: 44px 32px 57px;
-          }
-          @include w768 {
-            padding: 15px 24px 25px;
-          }
-          @include w480 {
-            padding: 15px 16px 25px;
-          }
-        }
-        .btn__wrapper {
-          padding-top: 32px;
-          margin-top: 0px;
-          @include w768 {
-            padding-top: 15px;
-          }
-        }
-        h3 {
-          padding-top: 8px;
-        }
-        p {
-          padding-top: 18px;
-          @include w768 {
-            padding-top: 11px;
-          }
-        }
-        &:hover {
-          transition: .9s;
-          background: url('../images/newsbg.png') no-repeat center center;
-          background-size: cover;
-          time {
-            color: $white-subtext;
-          }
-          h3 {
-            color: $gold;
-          }
-          p {
-            color: white;
-          }
-        }
-      }
-    }
-    &-link {
-      border-bottom: 1px solid $white-low;
-      padding: 0 0 3px;
-      display: inline-block;
-      &:hover {
-        border-color: $gold;
-      }
-    }
-  }
+	background: $background-blue-3;
+	&-content {
+		&-head {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 70px 0;
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				background: $white-low;
+				height: 1px;
+				width: 50vw;
+				bottom: 0;
+			}
+			&::before {
+				right: 50%;
+			}
+			&::after {
+				left: 50%;
+			}
+			@include w1440 {
+				padding: 45px 0;
+			}
+			@include w1024 {
+				padding: 30px 0;
+			}
+			@include w768 {
+				padding: 19px 0;
+			}
+		}
+		&-block {
+			margin: 0 -9px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			@include w768 {
+				margin: 0 -24px;
+				grid-template-columns: 1fr;
+			}
+			@include w480 {
+				margin: 0 -16px;
+			}
+			&-item {
+				border-left: 1px solid $white-low;
+				@include w768 {
+					border-left: none;
+					border-bottom: 1px solid $white-low;
+				}
+				&:last-child {
+					border-right: 1px solid $white-low;
+					@include w768 {
+						border-right: none;
+						border-bottom: none;
+					}
+				}
+			}
+			&-item__infocenter {
+				border-bottom: 1px solid $white-low;
+				border-left: 1px solid $white-low;
+				border-right: 1px solid $white-low;
+				@include w768 {
+					border-left: none;
+					border-right: none;
+				}
+			}
+			&-item,
+			&-item__infocenter {
+				article {
+					padding: 72px 40px 90px;
+					@include w1200 {
+						padding: 44px 32px 57px;
+					}
+					@include w768 {
+						padding: 15px 24px 25px;
+					}
+					@include w480 {
+						padding: 15px 16px 25px;
+					}
+				}
+				.btn__wrapper {
+					padding-top: 32px;
+					margin-top: 0px;
+					@include w768 {
+						padding-top: 15px;
+					}
+				}
+				h3 {
+					padding-top: 8px;
+				}
+				p {
+					padding-top: 18px;
+					@include w768 {
+						padding-top: 11px;
+					}
+				}
+				&:hover {
+					transition: 0.9s;
+					background: url('../images/newsbg.png') no-repeat center center;
+					background-size: cover;
+					time {
+						color: $white-subtext;
+					}
+					h3 {
+						color: $gold;
+					}
+					p {
+						color: white;
+					}
+				}
+			}
+		}
+		&-link {
+			border-bottom: 1px solid $white-low;
+			padding: 0 0 3px;
+			display: inline-block;
+			&:hover {
+				border-color: $gold;
+			}
+		}
+	}
 }

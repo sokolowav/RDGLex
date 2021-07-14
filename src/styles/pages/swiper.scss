@@ -1,103 +1,99 @@
 .swiper {
-  position: relative;
-  max-height: 672px;
-  min-height: 200px;
-  height: 35vw;
-  overflow-x: hidden;
-  &-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    height: 100%;
-    max-height: 672px;
-    background: url('../images/homepage.png') no-repeat center center;
-    background-size: cover;
-    &::after {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: rgba(14, 25, 41, 0.8);
-    }
-  }     
-  &-content {
-    position: relative;
-    &-info{
-      position: absolute;
-      top: 47%;
-      transform: translateY(-50%);
-      @include w768 {
-        top: 45%;
-        padding: 0 0 0 20px;
-      }
-      @include w480 {
-        padding: 0 16px 0 0;
-      }
-      @include w360 {
-        br {
-          display: none;
-        }
-        .btn__wrapper {
-          margin-top: 20px;
-        }
-      }
-    }
-    &-controls {
-      position: relative;
-      transform: translateY(-100%);
-      bottom: 0;
-      height: 128px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 5;
-      @include w1200 {
-        height: 100px;
-      }
-      @include w1024 {
-        height: 80px;
-      }
-      @include w768 {
-        justify-content: center;
-        height: 48px;
-      } 
-      @include w480 {
-        height: 34px;
-      }
-    }
-  }
-  &-pagination {
-    height: 2px;
-    width: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include w768 {
-      justify-content: center;
-    }
-    &-bullet {
-      width: 40px;
-      height: 2px;
-      margin-right: 10px;
-      background: $white-low;
-      border-radius: 1px;
-      @include w768 {
-        width: 24px;
-        margin-right: 6px;
-      }
-      &:last-child {
-        margin-right: 0px;
-      }
-      &-active {
-        background: $gold;
-      }
-    }
-  }
+	position: relative;
+	max-height: 672px;
+	min-height: 200px;
+	height: 35vw;
+	overflow-x: hidden;
+	&-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		height: 100%;
+		max-height: 672px;
+		background: url('../images/homepage.png') no-repeat center center;
+		background-size: cover;
+		&::after {
+			content: '';
+			display: block;
+			height: 100%;
+			width: 100%;
+			background: rgba(14, 25, 41, 0.8);
+		}
+	}
+	&-content {
+		position: relative;
+		&-info {
+			position: absolute;
+			top: 47%;
+			transform: translateY(-50%);
+			@include w768 {
+				top: 45%;
+				padding: 0 0 0 20px;
+			}
+			@include w480 {
+				padding: 0 16px 0 0;
+			}
+			@include w360 {
+				br {
+					display: none;
+				}
+				.btn__wrapper {
+					margin-top: 20px;
+				}
+			}
+		}
+		&-controls {
+			position: relative;
+			transform: translateY(-100%);
+			bottom: 0;
+			height: 128px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			z-index: 5;
+			@include w1200 {
+				height: 100px;
+			}
+			@include w1024 {
+				height: 80px;
+			}
+			@include w768 {
+				justify-content: center;
+				height: 48px;
+			}
+			@include w480 {
+				height: 34px;
+			}
+		}
+	}
+	&-pagination {
+		height: 2px;
+		width: 140px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include w768 {
+			justify-content: center;
+		}
+		&-bullet {
+			width: 40px;
+			height: 2px;
+			margin-right: 10px;
+			background: $white-low;
+			border-radius: 1px;
+			@include w768 {
+				width: 24px;
+				margin-right: 6px;
+			}
+			&:last-child {
+				margin-right: 0px;
+			}
+			&-active {
+				background: $gold;
+			}
+		}
+	}
 }
-
-
-
-

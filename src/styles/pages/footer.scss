@@ -1,130 +1,129 @@
 .footer {
-  background-color: $background-blue-1;
-  &-top {
-    padding: 110px 0 98px; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include w1200 {
-      padding: 66px 0 59px;
-    }
-    @include w768 {
-      padding: 23px 0 20px;
-    }
-    &-text {
-      padding: 0 40px;
-      font-size: 11px;
-      line-height: 17px;
-      @include w768 {
-        display: none;
-      }
-      &__mobile {
-        padding-bottom: 25px;
-        font-size: 11px;
-        line-height: 17px;
-        display: none;
-        @include w768 {
-          display: block;
-        }
-      }
-    }
-    .logo {
-      img {
-        @include w1024 {
-          width: 76.77px;
-          height: 32px;
-        }
-      }
-    }
-  }
-  &-down {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    padding: 66px 0 117px;
-    white-space: nowrap;
-    @include w1200 {
-      padding: 40px 0 73px;
-    }
-    @include w768 {
-      padding: 13px 0 28px;
-      grid-template-columns: 1fr;
-    }
-    &-item {
-      padding-left: 40px;
-      font-size: 16px;
-      line-height: 40px;
-      color: $white-subtext;
-      &:first-child {
-        padding-left: 0px;
-        text-decoration: none;
-      }
-      @include w768 {
-        padding-left: 0;
-        font-size: 14px;
-        line-height: 28px;
-        text-decoration: underline;
-      }
-      
-    }
-    a:hover {
-      color: white;
-    }
-  }
-  
-  .col {
-    flex: 0 1 33.3%;
+	background-color: $background-blue-1;
+	&-top {
+		padding: 110px 0 98px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include w1200 {
+			padding: 66px 0 59px;
+		}
+		@include w768 {
+			padding: 23px 0 20px;
+		}
+		&-text {
+			padding: 0 40px;
+			font-size: 11px;
+			line-height: 17px;
+			@include w768 {
+				display: none;
+			}
+			&__mobile {
+				padding-bottom: 25px;
+				font-size: 11px;
+				line-height: 17px;
+				display: none;
+				@include w768 {
+					display: block;
+				}
+			}
+		}
+		.logo {
+			img {
+				@include w1024 {
+					width: 76.77px;
+					height: 32px;
+				}
+			}
+		}
+	}
+	&-down {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		padding: 66px 0 117px;
+		white-space: nowrap;
+		@include w1200 {
+			padding: 40px 0 73px;
+		}
+		@include w768 {
+			padding: 13px 0 28px;
+			grid-template-columns: 1fr;
+		}
+		&-item {
+			padding-left: 40px;
+			font-size: 16px;
+			line-height: 40px;
+			color: $white-subtext;
+			&:first-child {
+				padding-left: 0px;
+				text-decoration: none;
+			}
+			@include w768 {
+				padding-left: 0;
+				font-size: 14px;
+				line-height: 28px;
+				text-decoration: underline;
+			}
+		}
+		a:hover {
+			color: white;
+		}
+	}
 
-    @include w1440 {
-      padding: 30px 60px;
-    }
+	.col {
+		flex: 0 1 33.3%;
 
-    @include w1024 {
-      padding: 30px;
-      white-space: normal;
-    }
+		@include w1440 {
+			padding: 30px 60px;
+		}
 
-    @include w480 {
-      flex: 1;
-      width: 100%;
-      border: none;
-    }
-  }
+		@include w1024 {
+			padding: 30px;
+			white-space: normal;
+		}
+
+		@include w480 {
+			flex: 1;
+			width: 100%;
+			border: none;
+		}
+	}
 }
 
 .social-icons {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  &__item {
-    width: 48px;
-    height: 48px;
-    border: 1px solid $white-low;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 18px;
-    transition: .3s;
-    @include w1024 {
-      width: 32px;
-      height: 32px;
-      margin-right: 8px;
-    }
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	&__item {
+		width: 48px;
+		height: 48px;
+		border: 1px solid $white-low;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 18px;
+		transition: 0.3s;
+		@include w1024 {
+			width: 32px;
+			height: 32px;
+			margin-right: 8px;
+		}
 
-    &:hover {
-      border-color: $gold;
-    }
+		&:hover {
+			border-color: $gold;
+		}
 
-    &:last-child {
-      margin-right: 0px;
-    }
+		&:last-child {
+			margin-right: 0px;
+		}
 
-    img {
-      height: 24px;
-      @include w1024 {
-        height: 15px;
-      }
-    }
-  }
+		img {
+			height: 24px;
+			@include w1024 {
+				height: 15px;
+			}
+		}
+	}
 }

@@ -1,13 +1,13 @@
 .fancybox-content {
-  background: transparent !important;
-  overflow: hidden;
-  padding: 0;
-  @include w768 {
-    overflow: auto;
-    padding: 0 !important;
-  }
+	background: transparent !important;
+	overflow: hidden;
+	padding: 0;
+	@include w768 {
+		overflow: auto;
+		padding: 0 !important;
+	}
 }
 
 .fancybox-close-small {
-  display: none !important;
+	display: none !important;
 }

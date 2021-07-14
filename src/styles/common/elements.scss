@@ -1,723 +1,720 @@
 body {
-  color: $white-text;
-  font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
-  font-size: 17px;
-  line-height: 28px;
-  @include w1200 {
-    font-size: 15px;
-    line-height: 24px;
-  }
-  @include w768 {
-    font-size: 14px;
-    line-height: 22px;
-  }
+	color: $white-text;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	font-size: 17px;
+	line-height: 28px;
+	@include w1200 {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	@include w768 {
+		font-size: 14px;
+		line-height: 22px;
+	}
 }
 .fixed {
-  position: fixed;
-  overflow: hidden;
+	position: fixed;
+	overflow: hidden;
 }
 
 .wrapper {
-  width: 100%;
-  min-height: 100vh;
-  transition: .3s;
-  overflow: hidden;
+	width: 100%;
+	min-height: 100vh;
+	transition: 0.3s;
+	overflow: hidden;
 }
 
 h1 {
-  margin: 0;
-  font-size: 60px;
-  line-height: 73px;
-  font-weight: 600;
+	margin: 0;
+	font-size: 60px;
+	line-height: 73px;
+	font-weight: 600;
 
-  @include w1440 {
-    font-size: 48px;
-    line-height: 58px;
-  }
+	@include w1440 {
+		font-size: 48px;
+		line-height: 58px;
+	}
 
-  @include w1200 {
-    font-size: 42px;
-    line-height: 51px;
-  }
+	@include w1200 {
+		font-size: 42px;
+		line-height: 51px;
+	}
 
-  @include w1024 {
-    font-size: 36px;
-    line-height: 42px;
-  }
-  @include w768 {
-    font-size: 24px;
-    line-height: 29px;
-  }
-  @include w480 {
-    font-size: 24px;
-    line-height: 29px;
-  }
+	@include w1024 {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	@include w768 {
+		font-size: 24px;
+		line-height: 29px;
+	}
+	@include w480 {
+		font-size: 24px;
+		line-height: 29px;
+	}
 }
 
 h2 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 49px;
+	margin: 0;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 49px;
 
-  @include w1440 {
-    font-size: 30px;
-    line-height: 36px;
-  }
+	@include w1440 {
+		font-size: 30px;
+		line-height: 36px;
+	}
 
-  @include w1024 {
-    font-size: 25px;
-    line-height: 31px;
-  }
+	@include w1024 {
+		font-size: 25px;
+		line-height: 31px;
+	}
 
-  @include w480 {
-    font-size: 20px;
-    line-height: 25px;
-  }
+	@include w480 {
+		font-size: 20px;
+		line-height: 25px;
+	}
 }
 
 h3 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
-  letter-spacing: 1px;
+	margin: 0;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 27px;
+	letter-spacing: 1px;
 
-  @include w1440 {
-    font-size: 18px;
-    line-height: 23px;
-  }
+	@include w1440 {
+		font-size: 18px;
+		line-height: 23px;
+	}
 
-  @include w1024 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  @include w320 {
-    font-size: 14px;
-    line-height: 18px;
-  }
+	@include w1024 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	@include w320 {
+		font-size: 14px;
+		line-height: 18px;
+	}
 }
 
 p {
-  color: $white-subtext;
+	color: $white-subtext;
 }
 
 time {
-  font-style: italic;
-  font-size: 15px;
-  @include w768 {
-    font-size: 12px;
-    line-height: 28px;
-  }
+	font-style: italic;
+	font-size: 15px;
+	@include w768 {
+		font-size: 12px;
+		line-height: 28px;
+	}
 }
 
 .d-flex {
-  display: flex;
+	display: flex;
 }
 
 .align-center {
-  align-items: center;
+	align-items: center;
 }
 
 .justify-center {
-  justify-content: center;
+	justify-content: center;
 }
 
 .justify-between {
-  justify-content: space-between;
+	justify-content: space-between;
 }
 
 .justify-end {
-  justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 .sub-h {
-  font-size: 30px;
-  font-weight: 300;
+	font-size: 30px;
+	font-weight: 300;
 
-  @include w1024 {
-    font-size: 17px;
-  }
+	@include w1024 {
+		font-size: 17px;
+	}
 
-  @include w480 {
-    margin-bottom: 10px;
-  }
+	@include w480 {
+		margin-bottom: 10px;
+	}
 }
 
 .section {
-  position: relative;
+	position: relative;
 }
 
 .col {
-  flex: 1 50%;
-  width: 50%;
-  
+	flex: 1 50%;
+	width: 50%;
 }
 
 .container {
-  max-width: 1472px;
-  padding: 0px 16px;
-  margin: 0 auto;
-  width: 85%;
-  min-width: 310px;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  @include w1024 {
-    width: 90%;
-  }
-  @include w768 {
-    padding: 0 24px;
-    width: 100%;
-  }
-  @include w480 {
-    padding: 0 16px;
-  }
+	max-width: 1472px;
+	padding: 0px 16px;
+	margin: 0 auto;
+	width: 85%;
+	min-width: 310px;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	@include w1024 {
+		width: 90%;
+	}
+	@include w768 {
+		padding: 0 24px;
+		width: 100%;
+	}
+	@include w480 {
+		padding: 0 16px;
+	}
 }
 .line-center {
-  position: relative;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 0.5px;
-    background: $white-low;
-  }
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		width: 0.5px;
+		background: $white-low;
+	}
 }
 
 .text-gold {
-  color: $gold;
+	color: $gold;
 }
 
 .text-white {
-  color: white;
+	color: white;
 }
 
 .text-thin {
-  font-weight: 200;
+	font-weight: 200;
 }
 
 .text__italic__white {
-  font-style: italic;
-  color: $white-text;
+	font-style: italic;
+	color: $white-text;
 }
 
 .text-sub {
-  color: $white-subtext;
+	color: $white-subtext;
 }
 
 .text-number {
-  font-size: 70px;
-  font-weight: 300;
-  font-family: 'Roboto', sans-serif;
-  line-height: 70px;
+	font-size: 70px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	line-height: 70px;
 
-  @include w768 {
-    font-size: 48px;
-    line-height: 48px;
-  }
+	@include w768 {
+		font-size: 48px;
+		line-height: 48px;
+	}
 }
 
 .phone {
-  margin-right: 59px;
-  @include w1024 {
-    margin-right: 16px;
-  }
-  @include w768 {
-    display: none;
-  }
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-  &__icon {
-    margin-right: 23px;
-    &:hover {
-      border-color: $gold;
-    }
-    @include w1440 {
-      margin-right: 10px;
-    }
-    @include w1024 {
-      img {
-        height: 15px;
-      }
-    }
-  }
-  &__info {
-    line-height: 14px;
-  }
+	margin-right: 59px;
+	@include w1024 {
+		margin-right: 16px;
+	}
+	@include w768 {
+		display: none;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+	&__icon {
+		margin-right: 23px;
+		&:hover {
+			border-color: $gold;
+		}
+		@include w1440 {
+			margin-right: 10px;
+		}
+		@include w1024 {
+			img {
+				height: 15px;
+			}
+		}
+	}
+	&__info {
+		line-height: 14px;
+	}
 }
 
 .text-pinyon {
-  font-family: 'PinyonScript', sans-serif;
-  font-size: 36px;
+	font-family: 'PinyonScript', sans-serif;
+	font-size: 36px;
 
-  @include w1024 {
-    font-size: 17px;
-  }
+	@include w1024 {
+		font-size: 17px;
+	}
 }
 
 .icon-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  width: 48px;
-  border: 1px solid $white-low;
-  border-radius: 50%;
-  cursor: pointer;
-  @include w1024 {
-    height: 32px;
-    width: 32px;
-  }
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	width: 48px;
+	border: 1px solid $white-low;
+	border-radius: 50%;
+	cursor: pointer;
+	@include w1024 {
+		height: 32px;
+		width: 32px;
+	}
 
-  &--small {
-    height: 40px;
-    width: 40px;
-    @include w768 {
-      width: 30px;
-      height: 30px;  
-    }
-  }
+	&--small {
+		height: 40px;
+		width: 40px;
+		@include w768 {
+			width: 30px;
+			height: 30px;
+		}
+	}
 
-  &--big {
-    height: 84px;
-    width: 84px;
-    img {
-      max-width: 70%;
-    }
-    @include w1200 {
-      height: 72px;
-      width: 72px;
-    }
-    @include w768 {
-      height: 60px;
-      width: 60px;
-    }
-  }
-  &:hover {
-    border-color: $gold;
-  }
+	&--big {
+		height: 84px;
+		width: 84px;
+		img {
+			max-width: 70%;
+		}
+		@include w1200 {
+			height: 72px;
+			width: 72px;
+		}
+		@include w768 {
+			height: 60px;
+			width: 60px;
+		}
+	}
+	&:hover {
+		border-color: $gold;
+	}
 }
 
 .btn {
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  padding: 12px 29px;
-  font-weight: 500;
-  font-size: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: .3s;
-  @include w1200 {
-    font-size: 16px;
-    padding: 15px 25px;
-    height: 48px;
-  }
-  @include w1024 {
-    height: 32px;
-    padding: 9px 15px;
-    font-size: 14px;
-  }
-  &__stretched {
-    height: 60px;
-    width: 100%;
-    @include w768 {
-      height: 48px;
-    }
-  }
-  &__wrapper{
-    margin-top: 50px;
-    @include w768 {
-      margin-top: 30px;
-    }
-    &__stretched {
-      width: 100%;
-    }
-  }
-  &-gold {
-    background-color: $gold;
-  }
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	padding: 12px 29px;
+	font-weight: 500;
+	font-size: 17px;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+	@include w1200 {
+		font-size: 16px;
+		padding: 15px 25px;
+		height: 48px;
+	}
+	@include w1024 {
+		height: 32px;
+		padding: 9px 15px;
+		font-size: 14px;
+	}
+	&__stretched {
+		height: 60px;
+		width: 100%;
+		@include w768 {
+			height: 48px;
+		}
+	}
+	&__wrapper {
+		margin-top: 50px;
+		@include w768 {
+			margin-top: 30px;
+		}
+		&__stretched {
+			width: 100%;
+		}
+	}
+	&-gold {
+		background-color: $gold;
+	}
 
-  &-regular {
-    background-color: transparent;
-    border: 1px solid $white-low;
-    border-top: 1px solid $gold;
-    color: $white-text;
-    white-space: nowrap;
-    
-    &:hover {
-      background-color: $gold;
-      color: $black-text;
-    }
-    &:hover span {
-      color: $black-text;
-    }
+	&-regular {
+		background-color: transparent;
+		border: 1px solid $white-low;
+		border-top: 1px solid $gold;
+		color: $white-text;
+		white-space: nowrap;
 
-  }
+		&:hover {
+			background-color: $gold;
+			color: $black-text;
+		}
+		&:hover span {
+			color: $black-text;
+		}
+	}
 
-  &.sending {
-    pointer-events: none;
-    cursor: not-allowed;
-    background-color: $btn-sending-background;
-    color: $btn-sending-color;
-  }
+	&.sending {
+		pointer-events: none;
+		cursor: not-allowed;
+		background-color: $btn-sending-background;
+		color: $btn-sending-color;
+	}
 }
 
 .btn-wrapper__mobile {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
 
-  @include w768 {
-    display: block;
-  }
+	@include w768 {
+		display: block;
+	}
 }
 
 .question {
-  background: $background-blue-3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 20px;
-  cursor: pointer;
+	background: $background-blue-3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
 }
 
 .swipers-arrows {
-  position: absolute;
-  right: 0;
-  display: flex;
-  align-items: center;
+	position: absolute;
+	right: 0;
+	display: flex;
+	align-items: center;
 
-  @include w768 {
-    display: none;
-  }
-  
-  &__item {
-    margin-right: 15px;
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
+	@include w768 {
+		display: none;
+	}
 
-  &__left {
-    transform: rotate(90deg)
-  }
+	&__item {
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
 
-  &__right {
-    transform: rotate(-90deg)
-  }
+	&__left {
+		transform: rotate(90deg);
+	}
+
+	&__right {
+		transform: rotate(-90deg);
+	}
 }
 
 .tag {
-  padding: 10px 15px;
-  border-radius: 30px;
-  color: $gold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid $white-low;
-  font-size: 14px;
-  font-weight: 400;
+	padding: 10px 15px;
+	border-radius: 30px;
+	color: $gold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $white-low;
+	font-size: 14px;
+	font-weight: 400;
 
-  @include w1440 {
-    font-size: 13px;
-    padding: 5px 15px;
-  }
+	@include w1440 {
+		font-size: 13px;
+		padding: 5px 15px;
+	}
 }
 
 .mob-none {
-  @include w480 {
-    display: none;
-  }
+	@include w480 {
+		display: none;
+	}
 }
 
 .grey-line-horizontal {
-  content: "";
-  background: $white-low;
-  height: 1px;
-  width: 100%;
-  &__short {
-    width: 33px;
-    background: $white-low-20;
-  }
+	content: '';
+	background: $white-low;
+	height: 1px;
+	width: 100%;
+	&__short {
+		width: 33px;
+		background: $white-low-20;
+	}
 }
 
 .horizontal-borders {
-  border-top: 1px solid $white-low;
-  border-bottom: 1px solid $white-low;
-  margin: 53px 0;
-  padding: 53px 0;
-  @include w768{
-    margin: 26px 0 28px;
-    padding: 26px 0;
-  }
+	border-top: 1px solid $white-low;
+	border-bottom: 1px solid $white-low;
+	margin: 53px 0;
+	padding: 53px 0;
+	@include w768 {
+		margin: 26px 0 28px;
+		padding: 26px 0;
+	}
 }
 
 .highlight-box {
-  width: 100%;
-  p {
-    font-size: 24px;
-    line-height: 36px;
-    color: white;
-    padding: 50px 60px;
-    @include w1200 {
-      font-size: 20px;
-      line-height: 30px;
-      padding: 37px 45px;
-    }
-    @include w768 {
-      font-size: 18px;
-      line-height: 26px;
-      padding: 25px 30px;
-    }
-  }
-  &-content {
-    height: 100%;
-    position: relative;
-    border: 1px solid $white-low;
-    border-left: none;
-    &::before {
-      content: "";
-      background: $gold;
-      height: calc(100% + 2px);
-      width: 6px;
-      position: absolute;
-      top: -1px;
-    }
-  }
+	width: 100%;
+	p {
+		font-size: 24px;
+		line-height: 36px;
+		color: white;
+		padding: 50px 60px;
+		@include w1200 {
+			font-size: 20px;
+			line-height: 30px;
+			padding: 37px 45px;
+		}
+		@include w768 {
+			font-size: 18px;
+			line-height: 26px;
+			padding: 25px 30px;
+		}
+	}
+	&-content {
+		height: 100%;
+		position: relative;
+		border: 1px solid $white-low;
+		border-left: none;
+		&::before {
+			content: '';
+			background: $gold;
+			height: calc(100% + 2px);
+			width: 6px;
+			position: absolute;
+			top: -1px;
+		}
+	}
 
-  &__list {
-    padding: 33px 0;
-    @include w1200 {
-      padding: 30px 0;
-    }
-    @include w768 {
-      padding: 26px 0;
-    }
-    h3 {
-      padding-bottom: 15px;
-      @include w768 {
-        padding-bottom: 0;
-      }
-    }
-    &-item {
-      display: flex;
-      padding-top: 15px;
-    }
-    &-marker {
-      font-size: 15px;
-      width: 40px;
-      height: 40px;
-      @include w768 {
-        font-size: 14px;
-        width: 30px;
-        height: 30px;  
-      }
-    }
-    &-text {
-      padding: 6px 0 0 16px;
-      @include w1200 {
-        padding: 6px 0 0 4px;
-      }
-      @include w768 {
-        padding: 4px 0 0 4px;
-      }
-    }
-
-  }
-  &__dark {
-    font-size: 24px;
-    line-height: 36px;
-    background-color: $background-blue-4;
-    padding: 50px 60px;
-    margin-top: 57px;
-    @include w1200 {
-      font-size: 20px;
-      line-height: 30px;
-      margin-top: 42px;
-      margin-bottom: 10px;
-      padding: 35px 45px;
-    }
-    @include w768 {
-      font-size: 18px;
-      line-height: 26px;
-      margin-top: 27px;
-      margin-bottom: 10px;
-      padding: 20px 30px;
-    }
-  }
+	&__list {
+		padding: 33px 0;
+		@include w1200 {
+			padding: 30px 0;
+		}
+		@include w768 {
+			padding: 26px 0;
+		}
+		h3 {
+			padding-bottom: 15px;
+			@include w768 {
+				padding-bottom: 0;
+			}
+		}
+		&-item {
+			display: flex;
+			padding-top: 15px;
+		}
+		&-marker {
+			font-size: 15px;
+			width: 40px;
+			height: 40px;
+			@include w768 {
+				font-size: 14px;
+				width: 30px;
+				height: 30px;
+			}
+		}
+		&-text {
+			padding: 6px 0 0 16px;
+			@include w1200 {
+				padding: 6px 0 0 4px;
+			}
+			@include w768 {
+				padding: 4px 0 0 4px;
+			}
+		}
+	}
+	&__dark {
+		font-size: 24px;
+		line-height: 36px;
+		background-color: $background-blue-4;
+		padding: 50px 60px;
+		margin-top: 57px;
+		@include w1200 {
+			font-size: 20px;
+			line-height: 30px;
+			margin-top: 42px;
+			margin-bottom: 10px;
+			padding: 35px 45px;
+		}
+		@include w768 {
+			font-size: 18px;
+			line-height: 26px;
+			margin-top: 27px;
+			margin-bottom: 10px;
+			padding: 20px 30px;
+		}
+	}
 }
 
 .business-card {
-  background-color: $background-blue-4;
-  margin-top: 63px;
-  display: flex;
-  justify-content: space-between;
-  @include w1200 {
-    margin-top: 53px;
-  }
-  @include w768 {
-    margin-top: 43px;
-  }
-  @include w360 {
-    flex-direction: column;
-    margin-top: 23px;
-  }
-  &-right {
-    position: relative;
-    width: 50%;
-    @include w360 {
-      height: 293px;
-      width: 100%;
-    }
-    @include w320 {
-      height: 260px;
-    }
-  }
-  &-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 82%;
-    max-height: 322px;
-    @include w1440 {
-      max-height: 260px;
-    }
-    @include w1024 {
-      max-height: 220px;
-    }
-    @include w768 {
-      max-height: 190px;
-    }
-    @include w480 {
-      max-height: 170px;
-    }
-    @include w360 {
-      max-height: 233px;
-    }
-    @include w320 {
-      max-height: 205px;
-    }
-  }
-  &-photo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 5;
-    height: 93%;
-    max-height: 354px;
-    @include w1024 {
-      max-height: 245px;
-    }
-    @include w768 {
-      max-height: 227px;
-    }
-    @include w480 {
-      max-height: 210px;
-    }
-    @include w360{
-      max-height: 293px;
-    }
-    @include w320 {
-      max-height: 240px;
-    }
-  }
-  img {
-    width: auto;
-    height: 100%;
-  }
-  &-name {
-    padding-bottom: 20px;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 39px;
-    color: white;
-    @include w1200 {
-      font-size: 26px;
-      line-height: 30px;
-      padding-bottom: 15px;
-
-    }
-    @include w768 {
-      font-size: 20px;
-      line-height: 24px;
-      padding-bottom: 10px;
-    }
-  }
-  &-post {
-    font-size: 15px;
-    color: $white-subtext;
-    font-style: italic;
-    @include w768 {
-      font-size: 12px;
-      line-height: 22px;
-    }
-  }
-  &-phone {
-    padding-top:  58px;
-    padding-bottom: 15px;
-    font-size: 24px;
-    font-weight: 600;
-    @include w1200 {
-      padding-top:  53px;
-    }
-    @include w768 {
-      padding-top:  48px;
-    }
-  }
-  &-left {
-    padding: 60px 0 65px 60px;
-    @include w1200 {
-      padding: 42px 0 49px 42px;
-    }
-    @include w768 {
-      padding: 25px 0 33px 25px;
-    }
-    @include w480 {
-      padding: 25px 0 33px 22px;
-    }
-    @include w360 {
-      padding: 25px 0 0 22px;
-    }
-  }
+	background-color: $background-blue-4;
+	margin-top: 63px;
+	display: flex;
+	justify-content: space-between;
+	@include w1200 {
+		margin-top: 53px;
+	}
+	@include w768 {
+		margin-top: 43px;
+	}
+	@include w360 {
+		flex-direction: column;
+		margin-top: 23px;
+	}
+	&-right {
+		position: relative;
+		width: 50%;
+		@include w360 {
+			height: 293px;
+			width: 100%;
+		}
+		@include w320 {
+			height: 260px;
+		}
+	}
+	&-image {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 82%;
+		max-height: 322px;
+		@include w1440 {
+			max-height: 260px;
+		}
+		@include w1024 {
+			max-height: 220px;
+		}
+		@include w768 {
+			max-height: 190px;
+		}
+		@include w480 {
+			max-height: 170px;
+		}
+		@include w360 {
+			max-height: 233px;
+		}
+		@include w320 {
+			max-height: 205px;
+		}
+	}
+	&-photo {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 5;
+		height: 93%;
+		max-height: 354px;
+		@include w1024 {
+			max-height: 245px;
+		}
+		@include w768 {
+			max-height: 227px;
+		}
+		@include w480 {
+			max-height: 210px;
+		}
+		@include w360 {
+			max-height: 293px;
+		}
+		@include w320 {
+			max-height: 240px;
+		}
+	}
+	img {
+		width: auto;
+		height: 100%;
+	}
+	&-name {
+		padding-bottom: 20px;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 39px;
+		color: white;
+		@include w1200 {
+			font-size: 26px;
+			line-height: 30px;
+			padding-bottom: 15px;
+		}
+		@include w768 {
+			font-size: 20px;
+			line-height: 24px;
+			padding-bottom: 10px;
+		}
+	}
+	&-post {
+		font-size: 15px;
+		color: $white-subtext;
+		font-style: italic;
+		@include w768 {
+			font-size: 12px;
+			line-height: 22px;
+		}
+	}
+	&-phone {
+		padding-top: 58px;
+		padding-bottom: 15px;
+		font-size: 24px;
+		font-weight: 600;
+		@include w1200 {
+			padding-top: 53px;
+		}
+		@include w768 {
+			padding-top: 48px;
+		}
+	}
+	&-left {
+		padding: 60px 0 65px 60px;
+		@include w1200 {
+			padding: 42px 0 49px 42px;
+		}
+		@include w768 {
+			padding: 25px 0 33px 25px;
+		}
+		@include w480 {
+			padding: 25px 0 33px 22px;
+		}
+		@include w360 {
+			padding: 25px 0 0 22px;
+		}
+	}
 }
 
 .active-gold {
-  color: $gold;
+	color: $gold;
 }
 
 .pre-wrap {
-  white-space: pre-wrap;
+	white-space: pre-wrap;
 }
 
 .show-more__hidden {
-  display: none !important;
-  &-hight-width {
-    display: none;
-    @include w768 {
-      display: block;
-    }
-  }
+	display: none !important;
+	&-hight-width {
+		display: none;
+		@include w768 {
+			display: block;
+		}
+	}
 }
 
-.modalbox-consult, .modalbox-callback {
-  color: black;
+.modalbox-consult,
+.modalbox-callback {
+	color: black;
 }

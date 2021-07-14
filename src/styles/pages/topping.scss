@@ -1,80 +1,79 @@
 .topping {
-  position: relative;
-  &-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    height: 100%;
-    &::after {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      background: rgba(14, 25, 41, 0.8);
-    }
-    &__service {
-      background: url('../images/service.png') no-repeat center center;
-      background-size: cover;
-    }
-    &__service-info {
-      background: url('../images/service.png') no-repeat center center;
-      background-size: cover;
-    }
-    &__team {
-      background: url('../images/team.png') no-repeat center center;
-      background-size: cover;
-    }
-    &__news-article {
-      background: url('../images/news-article.png') no-repeat center center;
-      background-size: cover;
-    }
-    &__contacts {
-      background: url('../images/contacts.png') no-repeat center center;
-      background-size: cover;
-    }
-  }     
-  &-content {
-    display: flex;
-    @include w768 {
-      img {
-        width: 4.67px;
-        height: 9.33px;
-      }
-    }
-    a {
-      align-items: center;
-    }
-    span {
-      padding-left: 18px;
-      @include w768 {
-        padding-left: 14px;
-      }
-    }
-    h1 {
-      padding-top: 30px;
-      @include w1200 {
-        padding-top: 24px;
-      }
-      @include w768 {
-        padding-top: 18px;
-      }
-    }
-    &-info {
-      margin: auto 0;
-      padding: 66px 0 86px;
-      @include w768 {
-        padding: 24px 0 50px;
-        span {
-          font-size: 12px;
-        }
-      }
-      @include w480 {
-        padding: 24px 0;
-      }  
-    }
-  }
+	position: relative;
+	&-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		height: 100%;
+		&::after {
+			content: '';
+			display: block;
+			height: 100%;
+			width: 100%;
+			background: rgba(14, 25, 41, 0.8);
+		}
+		&__service {
+			background: url('../images/service.png') no-repeat center center;
+			background-size: cover;
+		}
+		&__service-info {
+			background: url('../images/service.png') no-repeat center center;
+			background-size: cover;
+		}
+		&__team {
+			background: url('../images/team.png') no-repeat center center;
+			background-size: cover;
+		}
+		&__news-article {
+			background: url('../images/news-article.png') no-repeat center center;
+			background-size: cover;
+		}
+		&__contacts {
+			background: url('../images/contacts.png') no-repeat center center;
+			background-size: cover;
+		}
+	}
+	&-content {
+		display: flex;
+		@include w768 {
+			img {
+				width: 4.67px;
+				height: 9.33px;
+			}
+		}
+		a {
+			align-items: center;
+		}
+		span {
+			padding-left: 18px;
+			@include w768 {
+				padding-left: 14px;
+			}
+		}
+		h1 {
+			padding-top: 30px;
+			@include w1200 {
+				padding-top: 24px;
+			}
+			@include w768 {
+				padding-top: 18px;
+			}
+		}
+		&-info {
+			margin: auto 0;
+			padding: 66px 0 86px;
+			@include w768 {
+				padding: 24px 0 50px;
+				span {
+					font-size: 12px;
+				}
+			}
+			@include w480 {
+				padding: 24px 0;
+			}
+		}
+	}
 }
-

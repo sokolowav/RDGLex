@@ -1,216 +1,216 @@
 .about-mission {
-  &__light {
-    background-color: $background-blue-3;
-  }
-  &__dark {
-    background-color: $background-blue-4;
-  }
-  &-container {
-    display: grid;
-    grid-template-columns: 20.69% auto;
-    column-gap: 4.86%;
-    padding: 72px 0 80px;
-    @include w1200 {
-      padding: 60px 0 65px;
-    }
-    @include w768 {
-      grid-template-columns: 1fr;
-      padding: 27px 0 30px;
-      row-gap: 22px;
-    }
-  }
-  &-left {
-    p {
-      font-size: 32px;
-      font-weight: 600;
-      line-height: 39px;
-      color: white;
-      @include w1200 {
-        font-size: 26px;
-        line-height: 30px;
-      }
-      @include w768 {
-        font-size: 20px;
-        line-height: 24px;
-        br {
-          display: none;
-        }
-      }
-    }
-    span {
-      color: $gold;
-    }
-  }
-  .grey-line-horizontal {
-    margin: 80px 0;
-    @include w1200 {
-      margin: 50px 0;
-    }
-    @include w768 {
-      margin: 26px 0 30px;
-    }
-  }
+	&__light {
+		background-color: $background-blue-3;
+	}
+	&__dark {
+		background-color: $background-blue-4;
+	}
+	&-container {
+		display: grid;
+		grid-template-columns: 20.69% auto;
+		column-gap: 4.86%;
+		padding: 72px 0 80px;
+		@include w1200 {
+			padding: 60px 0 65px;
+		}
+		@include w768 {
+			grid-template-columns: 1fr;
+			padding: 27px 0 30px;
+			row-gap: 22px;
+		}
+	}
+	&-left {
+		p {
+			font-size: 32px;
+			font-weight: 600;
+			line-height: 39px;
+			color: white;
+			@include w1200 {
+				font-size: 26px;
+				line-height: 30px;
+			}
+			@include w768 {
+				font-size: 20px;
+				line-height: 24px;
+				br {
+					display: none;
+				}
+			}
+		}
+		span {
+			color: $gold;
+		}
+	}
+	.grey-line-horizontal {
+		margin: 80px 0;
+		@include w1200 {
+			margin: 50px 0;
+		}
+		@include w768 {
+			margin: 26px 0 30px;
+		}
+	}
 }
 
 .advantages {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 25px;
-  margin-bottom: 23px;
-  @include w1200 {
-    grid-gap: 5px 25px;
-  }
-  @include w768 {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 0 25px;
-    margin-bottom: 8px;
-  } 
-  @include w480 {
-    display: block;
-    margin-bottom: 0;
-  }
-  &-item {
-    @include w768 {
-      display: grid;
-      grid-template-columns: 60px auto;
-    }
-    &__icon {
-      margin-bottom: 20px;
-      @include w1200 {
-        margin-bottom: 10px;
-        img {
-          height: 35px;
-          width: auto;
-        }
-      }
-      @include w768 {
-        margin-bottom: 0;
-        img {
-          height: 29px;
-          width: auto;
-        }
-      }
-    }
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 25px;
+	margin-bottom: 23px;
+	@include w1200 {
+		grid-gap: 5px 25px;
+	}
+	@include w768 {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 0 25px;
+		margin-bottom: 8px;
+	}
+	@include w480 {
+		display: block;
+		margin-bottom: 0;
+	}
+	&-item {
+		@include w768 {
+			display: grid;
+			grid-template-columns: 60px auto;
+		}
+		&__icon {
+			margin-bottom: 20px;
+			@include w1200 {
+				margin-bottom: 10px;
+				img {
+					height: 35px;
+					width: auto;
+				}
+			}
+			@include w768 {
+				margin-bottom: 0;
+				img {
+					height: 29px;
+					width: auto;
+				}
+			}
+		}
 
-    &__text {
-      font-size: 24px;
-      line-height: 29px;
-      padding-right: 34px;
-      @include w1200 {
-        font-size: 20px;
-        line-height: 25px;
-        padding-right: 15px;
-      }
-      @include w768 {
-        font-size: 18px;
-        line-height: 22px;
-        padding-right: 0px;
-        padding-left: 20px;
-      }
-    }
+		&__text {
+			font-size: 24px;
+			line-height: 29px;
+			padding-right: 34px;
+			@include w1200 {
+				font-size: 20px;
+				line-height: 25px;
+				padding-right: 15px;
+			}
+			@include w768 {
+				font-size: 18px;
+				line-height: 22px;
+				padding-right: 0px;
+				padding-left: 20px;
+			}
+		}
 
-    &__subtext {
-      font-size: 17px;
-      line-height: 28px;
-      padding-top: 15px;
-      padding-right: 34px;
-      @include w1200 {
-        font-size: 14px;
-        line-height: 22px;
-        padding-right: 10px;
-      }
-      @include w768 {
-        padding-right: 0;
-      }
-      @include w480 {
-        padding-bottom: 23px;
-      }
-    }
-  }
+		&__subtext {
+			font-size: 17px;
+			line-height: 28px;
+			padding-top: 15px;
+			padding-right: 34px;
+			@include w1200 {
+				font-size: 14px;
+				line-height: 22px;
+				padding-right: 10px;
+			}
+			@include w768 {
+				padding-right: 0;
+			}
+			@include w480 {
+				padding-bottom: 23px;
+			}
+		}
+	}
 }
 
 .steps {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 56px;
-  padding: 10px 0 32px;
-  @include w768 {
-    column-gap: 24px;
-    padding-top: 0;
-    padding-bottom: 7px;
-  }
-  @include w480 {
-    grid-template-columns: 1fr;
-    row-gap: 35px;
-    padding-bottom: 0;
-  }
-  &-item {
-    @include w480 {
-      display: flex;
-    }
-    &-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 31px;
-      @include w768 {
-        padding-bottom: 11px;
-      }
-      @include w480 {
-        flex-direction: column;
-        padding-right: 20px; 
-      }
-    }
-    &-arrow {
-      @include w768 {
-        width: 73px;
-      }
-      @include w480 {
-        width: 53px;
-        padding-top: 10px;
-      }
-      img {
-        width: 100%;
-        @include w480 {
-          transform: rotate(90deg) translateX(13px);
-        }
-      }
-    }
-  }
-  &__text {
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 15px;
-    padding-right: 34px;
-    @include w1200 {
-      font-size: 20px;
-      line-height: 25px;
-    }
-    @include w768 {
-      font-size: 18px;
-      line-height: 22px;
-      margin-bottom: 13px;
-      padding-right: 0;
-    }
-    @include w480 {
-      margin-bottom: 11px;
-    }
-  }
-   &__subtext {
-    font-size: 17px;
-    line-height: 28px;
-    padding-right: 34px;
-    @include w1200 {
-      font-size: 14px;
-      line-height: 22px;
-    }
-    @include w768 {
-      padding-right: 0;
-      br {
-        display: none;
-      }
-    }
-  }
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 56px;
+	padding: 10px 0 32px;
+	@include w768 {
+		column-gap: 24px;
+		padding-top: 0;
+		padding-bottom: 7px;
+	}
+	@include w480 {
+		grid-template-columns: 1fr;
+		row-gap: 35px;
+		padding-bottom: 0;
+	}
+	&-item {
+		@include w480 {
+			display: flex;
+		}
+		&-top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 31px;
+			@include w768 {
+				padding-bottom: 11px;
+			}
+			@include w480 {
+				flex-direction: column;
+				padding-right: 20px;
+			}
+		}
+		&-arrow {
+			@include w768 {
+				width: 73px;
+			}
+			@include w480 {
+				width: 53px;
+				padding-top: 10px;
+			}
+			img {
+				width: 100%;
+				@include w480 {
+					transform: rotate(90deg) translateX(13px);
+				}
+			}
+		}
+	}
+	&__text {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 15px;
+		padding-right: 34px;
+		@include w1200 {
+			font-size: 20px;
+			line-height: 25px;
+		}
+		@include w768 {
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: 13px;
+			padding-right: 0;
+		}
+		@include w480 {
+			margin-bottom: 11px;
+		}
+	}
+	&__subtext {
+		font-size: 17px;
+		line-height: 28px;
+		padding-right: 34px;
+		@include w1200 {
+			font-size: 14px;
+			line-height: 22px;
+		}
+		@include w768 {
+			padding-right: 0;
+			br {
+				display: none;
+			}
+		}
+	}
 }
